@@ -18,8 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".loginActivity"></activity>
-        <activity android:name=".profilActivity"></activity>
+        <activity android:name=".loginActivity" />
+        <activity android:name=".profilActivity" />
+        <activity android:name=".cetakActivity"></activity>
     </application>
 
 </manifest>
