@@ -18,8 +18,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="28dp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -32,8 +32,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="28dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -45,8 +45,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="28dp" />
 
     <Button
         android:id="@+id/button2"
@@ -56,8 +56,8 @@
         android:text="Pilih"
         android:textSize="18sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="134dp" />
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="108dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -65,9 +65,9 @@
         android:layout_height="26dp"
         android:text="ukuran maksimal 30mb"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="182dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="151dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -76,16 +76,16 @@
         android:text="Pilih file anda"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="25sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="95dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="69dp" />
 
     <EditText
         android:layout_width="244dp"
-        android:layout_height="49dp"
+        android:layout_height="46dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="134dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="108dp" />
 
     <TextView
         android:id="@+id/textView14"
@@ -96,7 +96,7 @@
         android:textSize="25sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="215dp" />
+        tools:layout_editor_absoluteY="177dp" />
 
     <Button
         android:id="@+id/button3"
@@ -105,7 +105,7 @@
         android:text="Warna"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="257dp" />
+        tools:layout_editor_absoluteY="216dp" />
 
     <Button
         android:id="@+id/button4"
@@ -114,7 +114,7 @@
         android:text="Orientasi"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="264dp" />
 
     <Button
         android:id="@+id/button5"
@@ -123,7 +123,7 @@
         android:text="Ukuran kertas"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="367dp" />
+        tools:layout_editor_absoluteY="305dp" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -131,9 +131,9 @@
         android:layout_height="wrap_content"
         android:text="Staples"
         android:textSize="15sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="435dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="381dp" />
 
     <RadioButton
         android:id="@+id/radioButton2"
@@ -141,9 +141,9 @@
         android:layout_height="wrap_content"
         android:text="Jilid"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="435dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="381dp" />
 
     <RadioButton
         android:id="@+id/radioButton3"
@@ -151,33 +151,35 @@
         android:layout_height="wrap_content"
         android:text="Cetak semua halaman"
         android:textSize="14sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="264dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="232dp" />
 
     <RadioButton
         android:id="@+id/radioButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cetak halaman :"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="305dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="264dp" />
 
     <EditText
         android:layout_width="53dp"
         android:layout_height="44dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="337dp" />
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="305dp" />
+
     <EditText
+        android:id="@+id/editText"
         android:layout_width="53dp"
         android:layout_height="44dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="337dp"/>
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="305dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -186,17 +188,17 @@
         android:text="-"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="347dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="312dp" />
 
     <EditText
         android:layout_width="53dp"
         android:layout_height="44dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="422dp" />
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="381dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -204,7 +206,16 @@
         android:layout_height="25dp"
         android:text="Salinan"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="394dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="147dp"
+        android:layout_height="46dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="439dp" />
+
 </android.support.constraint.ConstraintLayout>

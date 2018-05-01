@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
-        <activity android:name=".cetakActivity"></activity>
+        <activity android:name=".cetakActivity" />
+        <activity android:name=".cetak2Activity"></activity>
     </application>
 
 </manifest>
