@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.sep.daftarActivity">
+    tools:context="com.example.android.sep.daftarActivity"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/textView31"
@@ -12,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
         android:text="Buat akun anda dan mulai menggunakan SEP"
-        android:textSize="30px"
+        android:textSize="40px"
         android:textStyle="bold"
         android:typeface="serif" />
 
