@@ -21,7 +21,8 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
         <activity android:name=".cetakActivity" />
-        <activity android:name=".cetak2Activity"></activity>
+        <activity android:name=".cetak2Activity" />
+        <activity android:name=".daftarActivity"></activity>
     </application>
 
 </manifest>
