@@ -26,75 +26,117 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="302dp"
+        android:layout_width="117dp"
         android:layout_height="36dp"
-        android:text="Nama lengkap  :"
+        android:text="Nama lengkap"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="189dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="302dp"
+        android:layout_width="129dp"
         android:layout_height="36dp"
-        android:text="Nama pengguna  :"
+        android:text="Nama pengguna"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="225dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="302dp"
+        android:layout_width="64dp"
         android:layout_height="36dp"
-        android:text="Email  :"
+        android:text="Email"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="261dp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="302dp"
+        android:layout_width="122dp"
         android:layout_height="36dp"
-        android:text="Nomor Telpon  :"
+        android:text="Nomor Telpon"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="296dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="297dp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="302dp"
+        android:layout_width="76dp"
         android:layout_height="36dp"
-        android:text="Alamat  :"
+        android:text="Alamat"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="332dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="333dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="302dp"
+        android:layout_width="90dp"
         android:layout_height="36dp"
-        android:text="Kata Sandi  :"
+        android:text="Kata Sandi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="367dp" />
 
 
     <Button
@@ -115,5 +157,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="7dp"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="7dp"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="261dp" />
 
 </android.support.constraint.ConstraintLayout>

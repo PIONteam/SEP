@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pilihsepActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="106dp"
+            android:text="SEP1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="106dp"
+            android:text="SEP2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="468dp" />
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="106dp"
+            android:text="SEP3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="370dp" />
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="106dp"
+            android:text="SEP4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="142dp" />
+
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="106dp"
+            android:text="SEP5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="110dp"
+            android:text="SEP6"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+
+        <Button
+            android:layout_width="241dp"
+            android:layout_height="106dp"
+            android:text="SEP7"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="264dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
