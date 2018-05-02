@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SEP</string>
+    <string-array name="pilihan">
+        <item>Biasa</item>
+        <item>Jepang</item>
+        <item>Spiral</item>
+
+    </string-array>
 </resources>
