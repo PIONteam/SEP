@@ -7,6 +7,13 @@
     tools:context=".cetak2Activity"
     android:background="@drawable/background">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/header"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
     <TextView
         android:id="@+id/textView10"
         android:layout_width="104dp"
@@ -16,8 +23,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="88dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -30,7 +37,7 @@
         android:typeface="serif"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="82dp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -41,8 +48,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="88dp" />
 
 
     <TextView
@@ -55,14 +62,14 @@
         android:typeface="serif"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="70dp" />
+        tools:layout_editor_absoluteY="133dp" />
 
     <EditText
         android:layout_width="134dp"
         android:layout_height="32dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="70dp" />
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="133dp" />
 
     <Button
         android:id="@+id/button7"
@@ -72,7 +79,7 @@
         android:text="Lihat"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="70dp" />
+        tools:layout_editor_absoluteY="133dp" />
 
     <TextView
         android:id="@+id/textView19"
@@ -84,7 +91,7 @@
         android:typeface="serif"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="102dp" />
+        tools:layout_editor_absoluteY="163dp" />
 
     <TextView
         android:id="@+id/textView20"
@@ -94,7 +101,7 @@
         android:textSize="15sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="144dp" />
+        tools:layout_editor_absoluteY="200dp" />
 
     <TextView
         android:id="@+id/textView21"
@@ -104,7 +111,7 @@
         android:textSize="15sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="172dp" />
+        tools:layout_editor_absoluteY="241dp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -114,7 +121,7 @@
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteY="273dp" />
 
     <TextView
         android:id="@+id/textView23"
@@ -124,7 +131,7 @@
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="232dp" />
+        tools:layout_editor_absoluteY="301dp" />
 
     <TextView
         android:id="@+id/textView24"
@@ -134,7 +141,7 @@
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="266dp" />
+        tools:layout_editor_absoluteY="333dp" />
 
     <TextView
         android:id="@+id/textView25"
@@ -144,49 +151,49 @@
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="295dp" />
+        tools:layout_editor_absoluteY="364dp" />
 
     <EditText
         android:layout_width="138dp"
         android:layout_height="28dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="260dp" />
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="333dp" />
 
     <EditText
         android:layout_width="138dp"
         android:layout_height="28dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="172dp" />
-
-    <EditText
-        android:layout_width="138dp"
-        android:layout_height="28dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="295dp" />
-
-    <EditText
-        android:layout_width="138dp"
-        android:layout_height="28dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="124dp"
         tools:layout_editor_absoluteY="232dp" />
 
     <EditText
         android:layout_width="138dp"
         android:layout_height="28dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="364dp" />
 
     <EditText
         android:layout_width="138dp"
         android:layout_height="28dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="133dp" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <EditText
+        android:layout_width="138dp"
+        android:layout_height="28dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <EditText
+        android:layout_width="138dp"
+        android:layout_height="28dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="200dp" />
 
     <EditText
         android:id="@+id/EditText02"
@@ -200,8 +207,8 @@
         android:minWidth="10.0dip"
         android:scrollHorizontally="false"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="364dp" />
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="424dp" />
 
     <TextView
         android:id="@+id/textView26"
@@ -209,14 +216,14 @@
         android:layout_height="wrap_content"
         android:text="Keterangan"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="333dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="403dp" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Konfirmasi"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="424dp" />
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="490dp" />
 </android.support.constraint.ConstraintLayout>

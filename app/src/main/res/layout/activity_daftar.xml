@@ -7,15 +7,23 @@
     tools:context="com.example.android.sep.daftarActivity"
     android:background="@drawable/background">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header" />
+
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="76dp"
         android:text="Buat akun anda dan mulai menggunakan SEP"
-        android:textSize="40px"
+        android:textAlignment="center"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="serif" />
 
@@ -23,9 +31,8 @@
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/editText6"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
         android:ems="10"
         android:hint="Nama Lengkap"
         android:inputType="textPersonName" />
@@ -34,7 +41,7 @@
         android:id="@+id/editText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText5"
+        android:layout_above="@+id/editText7"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Nama Pengguna"
@@ -44,7 +51,7 @@
         android:id="@+id/editText7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText6"
+        android:layout_above="@+id/editText8"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Email"
@@ -54,7 +61,7 @@
         android:id="@+id/editText8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText7"
+        android:layout_above="@+id/editText9"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="No. Telepon"
@@ -64,7 +71,7 @@
         android:id="@+id/editText9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText8"
+        android:layout_above="@+id/editText10"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Alamat"
@@ -74,7 +81,7 @@
         android:id="@+id/editText10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText9"
+        android:layout_above="@+id/editText11"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Kata Sandi"
@@ -84,19 +91,20 @@
         android:id="@+id/editText11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText10"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="97dp"
         android:ems="10"
         android:hint="Konfirmasi Kata Sandi"
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="81dp"
+        android:layout_height="49dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="37dp"
         android:background="@android:color/holo_green_dark"
-        android:text="daftar" />
+        android:text="Daftar" />
 </RelativeLayout>
