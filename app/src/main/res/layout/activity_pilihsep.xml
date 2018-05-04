@@ -13,81 +13,117 @@
         android:background="@drawable/background">
 
         <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="391dp"
             android:layout_height="59dp"
             android:src="@drawable/header"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="-31dp"
-            tools:layout_editor_absoluteY="0dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="0dp" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/sep1"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="79dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button11"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/sep2"
+            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button10"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp" />
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/button12"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/sep3"
+            app:layout_constraintBottom_toTopOf="@+id/button13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button11"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="79dp" />
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/button13"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/sep4"
+            app:layout_constraintBottom_toTopOf="@+id/button14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button12"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="79dp" />
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/button14"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/sep5"
+            app:layout_constraintBottom_toTopOf="@+id/button15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button13"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="79dp"/>
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/button15"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/sep6"
+            app:layout_constraintBottom_toTopOf="@+id/button16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button14"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="79dp" />
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/button16"
             android:layout_width="277dp"
             android:layout_height="137dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/sep7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button15"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="79dp" />
+            tools:ignore="MissingConstraints" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

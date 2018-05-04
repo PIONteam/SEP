@@ -47,10 +47,11 @@
         android:id="@+id/button17"
         android:layout_width="93dp"
         android:layout_height="44dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@android:color/holo_green_light"
         android:text="Konfirmasi"
         android:textSize="15sp"
         tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="261dp" />
+        tools:layout_editor_absoluteY="261dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

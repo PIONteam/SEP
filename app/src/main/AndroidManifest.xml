@@ -4,11 +4,11 @@
 
     <application
         android:allowBackup="true"
+        android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
-        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".splashActivity"
             android:theme="@style/SplashTheme">
@@ -18,11 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".pilihsepActivity"/>
+        <activity android:name=".sep1Activity"/>
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
         <activity android:name=".cetakActivity" />
         <activity android:name=".cetak2Activity" />
-        <activity android:name=".daftarActivity"></activity>
+        <activity android:name=".daftarActivity"/>
+        <activity android:name=".daftar2Activity">
+
+        </activity>
     </application>
 
 </manifest>

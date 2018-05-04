@@ -61,7 +61,7 @@
         android:id="@+id/button2"
         android:layout_width="56dp"
         android:layout_height="43dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@android:color/holo_green_light"
         android:text="Pilih"
         android:textSize="18sp"
         tools:ignore="MissingConstraints"
@@ -158,12 +158,13 @@
         android:id="@+id/cbBox"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
+        android:text="Jilid"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="443dp" />
+        tools:layout_editor_absoluteY="437dp" />
 
     <RadioButton
         android:id="@+id/radioButton3"
