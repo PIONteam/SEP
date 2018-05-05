@@ -13,7 +13,8 @@
         android:layout_height="57dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/header" />
+        android:src="@drawable/header"
+        android:contentDescription="@string/todo" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -37,7 +38,7 @@
         android:id="@+id/textView"
         android:layout_width="124dp"
         android:layout_height="36dp"
-        android:text="Nama lengkap"
+        android:text="@string/Nama_lengkap"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -49,7 +50,7 @@
         android:id="@+id/textView2"
         android:layout_width="125dp"
         android:layout_height="36dp"
-        android:text="Nama pengguna"
+        android:text="@string/Nama_pengguna"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -61,7 +62,7 @@
         android:id="@+id/textView3"
         android:layout_width="124dp"
         android:layout_height="34dp"
-        android:text="Email"
+        android:text="@string/email"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -73,7 +74,7 @@
         android:id="@+id/textView4"
         android:layout_width="124dp"
         android:layout_height="36dp"
-        android:text="Nomor Telpon"
+        android:text="@string/nomor_telpon"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -85,7 +86,7 @@
         android:id="@+id/textView5"
         android:layout_width="124dp"
         android:layout_height="33dp"
-        android:text="Alamat"
+        android:text="@string/alamat"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -97,7 +98,7 @@
         android:id="@+id/textView6"
         android:layout_width="124dp"
         android:layout_height="36dp"
-        android:text="Kata Sandi"
+        android:text="@string/kata_sandi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -109,7 +110,7 @@
         android:id="@+id/textView8"
         android:layout_width="7dp"
         android:layout_height="36dp"
-        android:text=":"
+        android:text="@string/titik"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -121,7 +122,7 @@
         android:id="@+id/textView9"
         android:layout_width="7dp"
         android:layout_height="36dp"
-        android:text=":"
+        android:text="@string/titik"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -133,7 +134,7 @@
         android:id="@+id/textView10"
         android:layout_width="7dp"
         android:layout_height="36dp"
-        android:text=":"
+        android:text="@string/titik"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -145,7 +146,7 @@
         android:id="@+id/textView11"
         android:layout_width="7dp"
         android:layout_height="36dp"
-        android:text=":"
+        android:text="@string/titik"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -157,7 +158,7 @@
         android:id="@+id/textView12"
         android:layout_width="7dp"
         android:layout_height="36dp"
-        android:text=":"
+        android:text="@string/titik"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -169,7 +170,7 @@
         android:id="@+id/textView13"
         android:layout_width="7dp"
         android:layout_height="36dp"
-        android:text=":"
+        android:text="@string/titik"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -182,42 +183,48 @@
         android:layout_height="36dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="249dp" />
+        tools:layout_editor_absoluteY="249dp"
+        android:inputType="" />
 
     <EditText
         android:layout_width="171dp"
         android:layout_height="36dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="427dp" />
+        tools:layout_editor_absoluteY="427dp"
+        android:inputType="" />
 
     <EditText
         android:layout_width="171dp"
         android:layout_height="36dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="394dp" />
+        tools:layout_editor_absoluteY="394dp"
+        android:inputType="" />
 
     <EditText
         android:layout_width="171dp"
         android:layout_height="36dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="358dp" />
+        tools:layout_editor_absoluteY="358dp"
+        android:inputType="" />
 
     <EditText
         android:layout_width="171dp"
         android:layout_height="36dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:inputType="" />
 
     <EditText
         android:layout_width="171dp"
         android:layout_height="36dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="323dp" />
+        tools:layout_editor_absoluteY="323dp"
+        android:inputType="" />
 
     <Button
         android:id="@+id/button"
@@ -229,7 +236,7 @@
         android:layout_marginStart="292dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/background_dark"
-        android:text="EDIT"
+        android:text="@string/edit"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"

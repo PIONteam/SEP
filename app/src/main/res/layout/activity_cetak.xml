@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView7"
@@ -214,7 +214,7 @@
         android:id="@+id/textView15"
         android:layout_width="18dp"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text="@string/strip"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="20sp"
         tools:ignore="MissingConstraints"
@@ -227,13 +227,14 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="393dp" />
+        tools:layout_editor_absoluteY="393dp"
+        android:inputType="" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="58dp"
         android:layout_height="25dp"
-        android:text="Salinan"
+        android:text="@string/salinan"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_light"
         tools:ignore="MissingConstraints"
@@ -244,12 +245,20 @@
         android:id="@+id/btnCetak"
         android:layout_width="147dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="#eea34e"
-        android:text="Cetak File>>"
+        android:text="@string/cetak_file"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="505dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        tools:ignore="MissingConstraints" />
 
 
 </android.support.constraint.ConstraintLayout>
