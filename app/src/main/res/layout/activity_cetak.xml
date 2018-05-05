@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cetakActivity">
+    tools:context=".cetakActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:src="@drawable/header"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"
@@ -18,8 +27,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="28dp" />
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="75dp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -32,8 +41,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="28dp" />
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="75dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -45,39 +54,39 @@
         android:textStyle="bold"
         android:typeface="serif"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="28dp" />
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="75dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="56dp"
         android:layout_height="43dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@android:color/holo_green_light"
         android:text="Pilih"
         android:textSize="18sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="108dp" />
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="161dp" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="246dp"
-        android:layout_height="26dp"
+        android:layout_width="122dp"
+        android:layout_height="27dp"
         android:text="ukuran maksimal "
         android:textAppearance="@style/TextAppearance.AppCompat"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="151dp" />
+        tools:layout_editor_absoluteY="204dp" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="26dp"
         android:text="30mb"
         android:textColor="@android:color/holo_red_dark"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="151dp" />
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="204dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -88,14 +97,14 @@
         android:textSize="25sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="69dp" />
+        tools:layout_editor_absoluteY="122dp" />
 
     <EditText
         android:layout_width="244dp"
-        android:layout_height="46dp"
+        android:layout_height="44dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="108dp" />
+        tools:layout_editor_absoluteY="161dp" />
 
     <TextView
         android:id="@+id/textView14"
@@ -106,7 +115,7 @@
         android:textSize="25sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="177dp" />
+        tools:layout_editor_absoluteY="223dp" />
 
     <Button
         android:id="@+id/button3"
@@ -115,7 +124,7 @@
         android:text="Warna"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="216dp" />
+        tools:layout_editor_absoluteY="259dp" />
 
     <Button
         android:id="@+id/button4"
@@ -124,7 +133,7 @@
         android:text="Orientasi"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="264dp" />
+        tools:layout_editor_absoluteY="305dp" />
 
     <Button
         android:id="@+id/button5"
@@ -133,7 +142,7 @@
         android:text="Ukuran kertas"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="353dp" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -143,73 +152,74 @@
         android:textSize="15sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="381dp" />
+        tools:layout_editor_absoluteY="437dp" />
 
     <Spinner
         android:id="@+id/cbBox"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
+        android:text="Jilid"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="381dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="437dp" />
 
     <RadioButton
         android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        android:layout_height="33dp"
         android:text="Cetak semua halaman"
         android:textSize="14sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="216dp" />
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="267dp" />
 
     <RadioButton
         android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="163dp"
+        android:layout_height="32dp"
         android:text="Cetak halaman :"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="255dp" />
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="307dp" />
 
     <EditText
-        android:layout_width="53dp"
+        android:layout_width="40dp"
         android:layout_height="44dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="295dp" />
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="339dp" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="53dp"
-        android:layout_height="44dp"
+        android:layout_width="40dp"
+        android:layout_height="47dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="295dp" />
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="339dp" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="6dp"
+        android:layout_width="18dp"
         android:layout_height="wrap_content"
         android:text="-"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="20sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="281dp"
-        tools:layout_editor_absoluteY="305dp" />
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="339dp" />
 
     <EditText
         android:layout_width="53dp"
         android:layout_height="44dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="367dp" />
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="393dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -218,18 +228,17 @@
         android:text="Salinan"
         android:textAppearance="@style/TextAppearance.AppCompat"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="342dp" />
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="393dp" />
 
     <Button
         android:id="@+id/btnCetak"
         android:layout_width="147dp"
         android:layout_height="46dp"
         android:text="Cetak File"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="439dp"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="505dp" />
 
 
 </android.support.constraint.ConstraintLayout>

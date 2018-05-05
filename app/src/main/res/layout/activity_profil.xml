@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profilActivity">
+    tools:context=".profilActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -12,90 +21,203 @@
         android:layout_height="98dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="397dp"
-        android:layout_marginEnd="137dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="44dp"
         android:src="@drawable/splash"
         app:civ_border_color="#fff"
         app:civ_border_width="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="302dp"
+        android:layout_width="124dp"
         android:layout_height="36dp"
-        android:text="Nama lengkap  :"
+        android:text="Nama lengkap"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="189dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="249dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="302dp"
+        android:layout_width="125dp"
         android:layout_height="36dp"
-        android:text="Nama pengguna  :"
+        android:text="Nama pengguna"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="225dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="285dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="302dp"
-        android:layout_height="36dp"
-        android:text="Email  :"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:text="Email"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="261dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="324dp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="302dp"
+        android:layout_width="124dp"
         android:layout_height="36dp"
-        android:text="Nomor Telpon  :"
+        android:text="Nomor Telpon"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="296dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="358dp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="302dp"
-        android:layout_height="36dp"
-        android:text="Alamat  :"
+        android:layout_width="124dp"
+        android:layout_height="33dp"
+        android:text="Alamat"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="332dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="394dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="302dp"
+        android:layout_width="124dp"
         android:layout_height="36dp"
-        android:text="Kata Sandi  :"
+        android:text="Kata Sandi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="427dp" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="7dp"
+        android:layout_height="36dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="7dp"
+        android:layout_height="36dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="7dp"
+        android:layout_height="36dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="7dp"
+        android:layout_height="36dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="7dp"
+        android:layout_height="36dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="7dp"
+        android:layout_height="36dp"
+        android:text=":"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <EditText
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <EditText
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <EditText
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <EditText
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <EditText
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <EditText
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="323dp" />
 
     <Button
         android:id="@+id/button"
@@ -114,6 +236,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.918" />
 
 </android.support.constraint.ConstraintLayout>
