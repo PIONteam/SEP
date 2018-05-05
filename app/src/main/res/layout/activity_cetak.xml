@@ -14,6 +14,7 @@
         android:layout_marginBottom="8dp"
         android:contentDescription="TODO"
         android:src="@drawable/header"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,6 +22,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+=======
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
+>>>>>>> 4335a74a38ccbeefbc3e07e7c3ddfd8aeb2c5752
 
     <TextView
         android:id="@+id/textView7"
@@ -220,7 +227,7 @@
         android:id="@+id/textView15"
         android:layout_width="18dp"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text="@string/strip"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="20sp"
         tools:ignore="MissingConstraints"
@@ -234,13 +241,14 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="393dp" />
+        tools:layout_editor_absoluteY="393dp"
+        android:inputType="" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="58dp"
         android:layout_height="25dp"
-        android:text="Salinan"
+        android:text="@string/salinan"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_light"
         tools:ignore="MissingConstraints"
@@ -256,14 +264,21 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#eea34e"
-        android:text="Cetak File>>"
+        android:text="@string/cetak_file"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.962"
+=======
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+>>>>>>> 4335a74a38ccbeefbc3e07e7c3ddfd8aeb2c5752
         tools:ignore="MissingConstraints" />
 
     <ImageView
