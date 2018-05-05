@@ -23,7 +23,6 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
         <activity android:name=".cetakActivity" />
-        <activity android:name=".cetak2Activity" />
         <activity android:name=".daftarActivity" />
         <activity android:name=".daftar2Activity" />
         <activity android:name=".sep2Activity" />
@@ -31,11 +30,15 @@
         <activity android:name=".sep4Activity" />
         <activity android:name=".sep5Activity" />
         <activity android:name=".sep6Activity" />
-        <activity android:name=".sep7Activity"></activity>
+        <activity android:name=".sep7Activity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".syaratketentuanActivity" />
+        <activity android:name=".berkasActivity" />
+        <activity android:name=".cetak2Activity"></activity>
     </application>
 
 </manifest>
