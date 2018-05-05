@@ -240,5 +240,27 @@
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="505dp" />
 
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="73dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="7dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Cetak File"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
 
 </android.support.constraint.ConstraintLayout>
