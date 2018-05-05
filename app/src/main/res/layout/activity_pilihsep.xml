@@ -13,13 +13,19 @@
         android:background="@drawable/background">
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="414dp"
-            android:layout_height="59dp"
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="TODO"
             android:src="@drawable/header"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="-31dp"
-            tools:layout_editor_absoluteY="0dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button10"
@@ -124,26 +130,42 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button15"
             tools:ignore="MissingConstraints" />
+
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="73dp"
             android:layout_height="44dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/logo"
-            tools:layout_editor_absoluteX="271dp"
-            tools:layout_editor_absoluteY="7dp"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView36"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="82dp"
             android:fontFamily="@font/fredoka_one"
             android:text="Outlet"
             android:textColor="@android:color/holo_orange_light"
             android:textSize="38sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="82dp"
-            tools:layout_editor_absoluteY="0dp" />
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

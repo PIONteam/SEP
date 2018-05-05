@@ -8,13 +8,19 @@
     android:background="@drawable/background">
 
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
         android:src="@drawable/header"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"
@@ -222,6 +228,7 @@
         tools:layout_editor_absoluteY="339dp" />
 
     <EditText
+        android:id="@+id/editText10"
         android:layout_width="53dp"
         android:layout_height="44dp"
         android:textStyle="bold"
@@ -244,33 +251,56 @@
         android:id="@+id/btnCetak"
         android:layout_width="147dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="#eea34e"
         android:text="Cetak File>>"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="505dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="73dp"
-        android:layout_height="44dp"
+        android:layout_width="82dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="416dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="7dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="556dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Cetak File"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="38sp"
+        android:textSize="37sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
 
