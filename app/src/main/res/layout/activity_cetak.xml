@@ -13,16 +13,17 @@
         android:src="@drawable/header"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siapkan"
+        android:text="@string/siapkan"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/background_light"
         android:textSize="25sp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -34,7 +35,7 @@
         android:id="@+id/textView8"
         android:layout_width="43dp"
         android:layout_height="34dp"
-        android:text="file"
+        android:text="@string/file"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="25sp"
@@ -48,8 +49,8 @@
         android:id="@+id/textView9"
         android:layout_width="63dp"
         android:layout_height="30dp"
-        android:text="anda"
-        android:textColor="@android:color/background_dark"
+        android:text="@string/anda"
+        android:textColor="@android:color/background_light"
         android:textSize="25sp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -62,7 +63,7 @@
         android:layout_width="56dp"
         android:layout_height="43dp"
         android:background="@android:color/holo_green_light"
-        android:text="Pilih"
+        android:text="@string/pilih"
         android:textSize="18sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="277dp"
@@ -72,8 +73,9 @@
         android:id="@+id/textView12"
         android:layout_width="122dp"
         android:layout_height="27dp"
-        android:text="ukuran maksimal "
+        android:text="@string/ukuran_maksimal"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="204dp" />
@@ -82,7 +84,7 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="26dp"
-        android:text="30mb"
+        android:text="@string/_30mb"
         android:textColor="@android:color/holo_red_dark"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="138dp"
@@ -92,7 +94,7 @@
         android:id="@+id/textView13"
         android:layout_width="168dp"
         android:layout_height="39dp"
-        android:text="Pilih file anda"
+        android:text="@string/pilih_file_anda"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="25sp"
         tools:ignore="MissingConstraints"
@@ -104,13 +106,14 @@
         android:layout_height="44dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="161dp" />
+        tools:layout_editor_absoluteY="161dp"
+        android:inputType="" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="252dp"
         android:layout_height="34dp"
-        android:text="Pengaturan file"
+        android:text="@string/pengaturan_file"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="25sp"
         tools:ignore="MissingConstraints"
@@ -121,7 +124,7 @@
         android:id="@+id/button3"
         android:layout_width="119dp"
         android:layout_height="wrap_content"
-        android:text="Warna"
+        android:text="@string/warna"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="259dp" />
@@ -130,7 +133,7 @@
         android:id="@+id/button4"
         android:layout_width="119dp"
         android:layout_height="wrap_content"
-        android:text="Orientasi"
+        android:text="@string/orientasi"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="305dp" />
@@ -139,7 +142,7 @@
         android:id="@+id/button5"
         android:layout_width="119dp"
         android:layout_height="wrap_content"
-        android:text="Ukuran kertas"
+        android:text="@string/ukuran_kertas"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="353dp" />
@@ -148,7 +151,8 @@
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Staples"
+        android:text="@string/staples"
+        android:textColor="@android:color/background_light"
         android:textSize="15sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
@@ -157,11 +161,11 @@
     <Spinner
         android:id="@+id/cbBox"
         android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:text="Jilid"
+        android:layout_height="35dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:text="@string/jilid"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="437dp" />
@@ -170,7 +174,8 @@
         android:id="@+id/radioButton3"
         android:layout_width="190dp"
         android:layout_height="33dp"
-        android:text="Cetak semua halaman"
+        android:text="@string/cetak_semua_halaman"
+        android:textColor="@android:color/background_light"
         android:textSize="14sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="154dp"
@@ -180,7 +185,8 @@
         android:id="@+id/radioButton4"
         android:layout_width="163dp"
         android:layout_height="32dp"
-        android:text="Cetak halaman :"
+        android:text="@string/cetak_halaman"
+        android:textColor="@android:color/background_light"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="307dp" />
@@ -191,7 +197,8 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="339dp" />
+        tools:layout_editor_absoluteY="339dp"
+        android:inputType="" />
 
     <EditText
         android:id="@+id/editText"
@@ -200,7 +207,8 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="339dp" />
+        tools:layout_editor_absoluteY="339dp"
+        android:inputType="" />
 
     <TextView
         android:id="@+id/textView15"
@@ -227,6 +235,7 @@
         android:layout_height="25dp"
         android:text="Salinan"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="393dp" />
@@ -235,7 +244,9 @@
         android:id="@+id/btnCetak"
         android:layout_width="147dp"
         android:layout_height="46dp"
-        android:text="Cetak File"
+        android:background="#eea34e"
+        android:text="Cetak File>>"
+        android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="505dp" />

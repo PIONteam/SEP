@@ -26,7 +26,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Untuk mencetak dengan SEP,"
+        android:text="Untuk mencetak dengan "
         android:textColor="@android:color/background_light"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -93,7 +93,7 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/username_text_input_layout2"
-        android:layout_width="255dp"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -101,10 +101,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446"
+        app:layout_constraintVertical_bias="0.448"
         tools:ignore="MissingConstraints">
 
         <EditText
@@ -153,7 +153,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Belum punya akun?"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.254"
@@ -164,7 +164,7 @@
     <TextView
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
-        android:layout_height="16dp"
+        android:layout_height="24dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -172,13 +172,13 @@
         android:onClick="daftar"
         android:text="Daftar disini"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintHorizontal_bias="0.707"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687"
+        app:layout_constraintVertical_bias="0.702"
         tools:ignore="OnClick" />
     <ImageView
         android:id="@+id/imageView9"
@@ -190,6 +190,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/textView36"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
@@ -201,4 +202,27 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="0dp" />
+=======
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SEP,"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+
+
+>>>>>>> dcfd1cb888e28fb2a0a23098e633caef645cc21a
 </android.support.constraint.ConstraintLayout>

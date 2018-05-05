@@ -13,8 +13,8 @@
 
         <Button
             android:layout_width="241dp"
-            android:layout_height="106dp"
-            android:text="SEP1"
+            android:layout_height="96dp"
+            android:text="@string/sep1"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72dp"
             tools:layout_editor_absoluteY="16dp" />
@@ -22,7 +22,7 @@
         <Button
             android:layout_width="241dp"
             android:layout_height="106dp"
-            android:text="SEP2"
+            android:text="@string/sep2"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="94dp"
             tools:layout_editor_absoluteY="468dp" />
@@ -30,7 +30,7 @@
         <Button
             android:layout_width="241dp"
             android:layout_height="106dp"
-            android:text="SEP3"
+            android:text="@string/sep3"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72dp"
             tools:layout_editor_absoluteY="370dp" />
@@ -38,7 +38,7 @@
         <Button
             android:layout_width="241dp"
             android:layout_height="106dp"
-            android:text="SEP4"
+            android:text="@string/sep4"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72dp"
             tools:layout_editor_absoluteY="142dp" />
@@ -47,7 +47,7 @@
         <Button
             android:layout_width="241dp"
             android:layout_height="106dp"
-            android:text="SEP5"
+            android:text="@string/sep5"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="82dp"
             tools:layout_editor_absoluteY="382dp" />
@@ -56,7 +56,7 @@
         <Button
             android:layout_width="241dp"
             android:layout_height="110dp"
-            android:text="SEP6"
+            android:text="@string/sep6"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72dp"
             tools:layout_editor_absoluteY="190dp" />
@@ -65,7 +65,7 @@
         <Button
             android:layout_width="241dp"
             android:layout_height="106dp"
-            android:text="SEP7"
+            android:text="@string/sep7"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72dp"
             tools:layout_editor_absoluteY="264dp" />
