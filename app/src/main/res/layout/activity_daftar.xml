@@ -11,26 +11,10 @@
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="58dp"
-<<<<<<< HEAD
         android:layout_marginBottom="8dp"
         android:contentDescription="TODO"
         android:src="@drawable/header"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-=======
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/header"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:contentDescription="@string/todo" />
->>>>>>> 4335a74a38ccbeefbc3e07e7c3ddfd8aeb2c5752
+        />
 
     <TextView
         android:id="@+id/textView31"
@@ -39,34 +23,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="8dp"
-<<<<<<< HEAD
-        android:layout_marginTop="8dp"
-        android:text="Buat akun anda dan mulai menggunakan "
-=======
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/buat_akun_anda_dan_mulai_menggunakan"
->>>>>>> 4335a74a38ccbeefbc3e07e7c3ddfd8aeb2c5752
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.094"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="12dp" />
-=======
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094"
-        tools:ignore="MissingConstraints" />
->>>>>>> 4335a74a38ccbeefbc3e07e7c3ddfd8aeb2c5752
+/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/username_text_input_layout3"
@@ -74,13 +31,11 @@
         android:layout_height="56dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="404dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.413"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.212">
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/editText3"
@@ -91,7 +46,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/nama_lengkap"
+            android:hint="Nama Lengkap"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -124,7 +79,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/nama_pengguna"
+            android:hint="Nama Pengguna"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -157,7 +112,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/email"
+            android:hint="Email"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -190,7 +145,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/no_telepon"
+            android:hint="No_telepone"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -223,7 +178,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/alamat"
+            android:hint="alamat"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -256,7 +211,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/kata_sandi"
+            android:hint="Kata Sandi"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -289,7 +244,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="@string/konfirmasi_kata_sandi"
+            android:hint="Konfirmasi Kata Sandi"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -311,13 +266,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_green_light"
-        android:text="@string/daftar"
+        android:text="Daftar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938"
+        app:layout_constraintVertical_bias="0.964"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -328,7 +283,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/SEP"
+        android:text="SEP"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -357,7 +312,6 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView36"
         android:layout_width="152dp"
         android:layout_height="58dp"
         android:layout_marginBottom="8dp"
