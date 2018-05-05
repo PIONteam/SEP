@@ -32,6 +32,10 @@
         <activity android:name=".sep5Activity" />
         <activity android:name=".sep6Activity" />
         <activity android:name=".sep7Activity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
