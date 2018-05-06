@@ -17,7 +17,6 @@ public class pilihsepActivity extends AppCompatActivity {
     private Button button16;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
