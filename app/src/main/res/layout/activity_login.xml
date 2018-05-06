@@ -12,10 +12,10 @@
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="TODO"
         android:src="@drawable/header"
-/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
     <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
@@ -151,6 +151,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Belum punya akun?"
+        android:textColor="@android:color/background_light"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -173,7 +174,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.702"
@@ -215,6 +216,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textView37"
         android:layout_width="wrap_content"
@@ -230,7 +232,7 @@
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintHorizontal_bias="0.815"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.142" />

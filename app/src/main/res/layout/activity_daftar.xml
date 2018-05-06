@@ -11,10 +11,10 @@
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:layout_marginBottom="8dp"
         android:contentDescription="TODO"
         android:src="@drawable/header"
-        />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView31"
@@ -40,7 +40,7 @@
 
         <EditText
             android:id="@+id/editText3"
-            android:layout_width="wrap_content"
+            android:layout_width="236dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -73,7 +73,7 @@
 
         <EditText
             android:id="@+id/editText4"
-            android:layout_width="wrap_content"
+            android:layout_width="236dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -106,7 +106,7 @@
 
         <EditText
             android:id="@+id/editText5"
-            android:layout_width="wrap_content"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -139,7 +139,7 @@
 
         <EditText
             android:id="@+id/editText6"
-            android:layout_width="wrap_content"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -172,7 +172,7 @@
 
         <EditText
             android:id="@+id/editText7"
-            android:layout_width="wrap_content"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -205,7 +205,7 @@
 
         <EditText
             android:id="@+id/editText8"
-            android:layout_width="wrap_content"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -213,7 +213,7 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="Kata Sandi"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -238,7 +238,7 @@
 
         <EditText
             android:id="@+id/editText9"
-            android:layout_width="wrap_content"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -246,7 +246,7 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="Konfirmasi Kata Sandi"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -278,7 +278,7 @@
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="308dp"
+        android:layout_width="336dp"
         android:layout_height="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -286,15 +286,15 @@
         android:layout_marginTop="8dp"
         android:text="Buat akun anda dan mulai menggunakan"
         android:textColor="@android:color/background_light"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.117" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -335,18 +335,19 @@
     <TextView
         android:id="@+id/textView38"
         android:layout_width="36dp"
-        android:layout_height="20dp"
+        android:layout_height="31dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="SEP"
         android:textColor="@android:color/holo_orange_dark"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.117" />
 </android.support.constraint.ConstraintLayout>

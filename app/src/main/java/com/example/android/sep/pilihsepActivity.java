@@ -43,21 +43,42 @@ public class pilihsepActivity extends AppCompatActivity {
         button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),sep1Activity.class);
+                Intent sep = new Intent(getApplicationContext(),sep2Activity.class);
                 startActivity(sep);
             }
         });
         button12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),sep1Activity.class);
+                Intent sep = new Intent(getApplicationContext(),sep3Activity.class);
                 startActivity(sep);
             }
         });
         button13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),sep1Activity.class);
+                Intent sep = new Intent(getApplicationContext(),sep4Activity.class);
+                startActivity(sep);
+            }
+        });
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sep = new Intent(getApplicationContext(),sep5Activity.class);
+                startActivity(sep);
+            }
+        });
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sep = new Intent(getApplicationContext(),sep6Activity.class);
+                startActivity(sep);
+            }
+        });
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sep = new Intent(getApplicationContext(),sep7Activity.class);
                 startActivity(sep);
             }
         });
