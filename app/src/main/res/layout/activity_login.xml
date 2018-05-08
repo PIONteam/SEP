@@ -31,7 +31,11 @@
     <EditText
         android:id="@+id/editText3"
         android:layout_width="275dp"
+<<<<<<< HEAD
         android:layout_height="51dp"
+=======
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -50,8 +54,13 @@
 
     <EditText
         android:id="@+id/editText4"
+<<<<<<< HEAD
         android:layout_width="275dp"
         android:layout_height="51dp"
+=======
+        android:layout_width="275sp"
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"

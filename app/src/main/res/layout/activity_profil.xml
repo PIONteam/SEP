@@ -45,7 +45,11 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="138dp"
+<<<<<<< HEAD
         android:layout_height="51dp"
+=======
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -86,7 +90,11 @@
 
     <TextView
         android:id="@+id/textView3"
+<<<<<<< HEAD
         android:layout_width="138dp"
+=======
+        android:layout_width="138sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -107,8 +115,13 @@
 
     <TextView
         android:id="@+id/textView4"
+<<<<<<< HEAD
         android:layout_width="138dp"
         android:layout_height="51dp"
+=======
+        android:layout_width="138sp"
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -128,7 +141,11 @@
 
     <TextView
         android:id="@+id/textView5"
+<<<<<<< HEAD
         android:layout_width="138dp"
+=======
+        android:layout_width="138sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:text="Alamat"
@@ -141,8 +158,13 @@
 
     <TextView
         android:id="@+id/textView6"
+<<<<<<< HEAD
         android:layout_width="138dp"
         android:layout_height="51dp"
+=======
+        android:layout_width="138sp"
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:background="@drawable/border_style"
         android:text="KAta Sandi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -163,8 +185,13 @@
         tools:layout_editor_absoluteY="229dp" />
 
     <EditText
+<<<<<<< HEAD
         android:layout_width="200dp"
         android:layout_height="51dp"
+=======
+        android:layout_width="200sp"
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:background="@drawable/border_style"
         android:inputType=""
         tools:ignore="MissingConstraints"
@@ -173,7 +200,11 @@
 
     <EditText
         android:layout_width="200dp"
+<<<<<<< HEAD
         android:layout_height="51dp"
+=======
+        android:layout_height="51sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:background="@drawable/border_style"
         android:inputType=""
         tools:ignore="MissingConstraints"
@@ -199,7 +230,11 @@
         tools:layout_editor_absoluteY="280dp" />
 
     <EditText
+<<<<<<< HEAD
         android:layout_width="200dp"
+=======
+        android:layout_width="200sp"
+>>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:inputType=""
