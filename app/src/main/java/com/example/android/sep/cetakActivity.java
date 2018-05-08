@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class cetakActivity extends AppCompatActivity {
 private Button btnCetak;
+private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,14 @@ private Button btnCetak;
 
         // function tombol
         btnCetak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sep = new Intent(getApplicationContext(),cetak2Activity.class);
+                startActivity(sep);
+            }
+        });
+        // function tombol
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent sep = new Intent(getApplicationContext(),cetak2Activity.class);
