@@ -21,7 +21,7 @@ private Button button2;
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_cetak);
     btnCetak=(Button)findViewById(R.id.btnCetak);
-
+    button2 = (Button)findViewById(R.id.button2);
         // function tombol
         btnCetak.setOnClickListener(new View.OnClickListener() {
             @Override

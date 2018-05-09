@@ -21,7 +21,7 @@ private Button button17;
         button17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),cetakActivity.class);
+                Intent sep = new Intent(getApplicationContext(),loginActivity.class);
                 startActivity(sep);
             }
         });

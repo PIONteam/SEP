@@ -37,7 +37,7 @@
         android:ems="10"
         android:hint="Kode Verifikasi"
         android:inputType="textPersonName"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"

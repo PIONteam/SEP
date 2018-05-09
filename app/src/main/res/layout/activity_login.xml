@@ -31,11 +31,6 @@
     <EditText
         android:id="@+id/editText3"
         android:layout_width="275dp"
-<<<<<<< HEAD
-        android:layout_height="51dp"
-=======
-        android:layout_height="51sp"
->>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -44,23 +39,19 @@
         android:ems="10"
         android:hint="Nama Pengguna"
         android:inputType="textPersonName"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintVertical_bias="0.308"
+        android:layout_height="51dp" />
 
     <EditText
         android:id="@+id/editText4"
-<<<<<<< HEAD
         android:layout_width="275dp"
         android:layout_height="51dp"
-=======
-        android:layout_width="275sp"
-        android:layout_height="51sp"
->>>>>>> 240807a3128277e5c40e73ca9b94896551d1154f
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -69,7 +60,7 @@
         android:ems="10"
         android:hint="Kata Sandi"
         android:inputType="textPassword"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
