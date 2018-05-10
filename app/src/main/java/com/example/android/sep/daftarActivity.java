@@ -71,8 +71,8 @@ public class daftarActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 intent = new Intent(daftarActivity.this, loginActivity.class);
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
         button9.setOnClickListener(new View.OnClickListener() {
@@ -191,8 +191,8 @@ public class daftarActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         intent = new Intent(daftarActivity.this,loginActivity.class);
-        finish();
         startActivity(intent);
+        finish();
     }
 
 }

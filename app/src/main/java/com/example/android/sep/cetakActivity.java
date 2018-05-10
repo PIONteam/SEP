@@ -20,6 +20,31 @@ private Button button2;
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_cetak);
+
+        String list[]={"Berwarna","Hitam putih"};
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<String> AdapterList = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_dropdown_item,list);
+        spinner.setAdapter(AdapterList);
+
+        String list1[]={"Portrait","Hitam putih"};
+        Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+        ArrayAdapter<String> AdapterList1 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_dropdown_item,list1);
+        spinner1.setAdapter(AdapterList1);
+
+        String list2[]={"F4","A4"};
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        ArrayAdapter<String> AdapterList2 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_dropdown_item,list2);
+        spinner2.setAdapter(AdapterList2);
+
+        String list3[]={"Jilid Mika","Jilid Jepang","Jilid Spiral"};
+        Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
+        ArrayAdapter<String> AdapterList3 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_dropdown_item,list3);
+        spinner3.setAdapter(AdapterList3);
+
     btnCetak=(Button)findViewById(R.id.btnCetak);
     button2 = (Button)findViewById(R.id.button2);
         // function tombol
@@ -38,6 +63,7 @@ private Button button2;
                 startActivity(sep);
             }
         });
+
 
     }
 }
