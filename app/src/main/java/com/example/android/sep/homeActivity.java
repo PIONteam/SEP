@@ -1,5 +1,6 @@
 package com.example.android.sep;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,13 +82,15 @@ public class homeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            Intent home = new Intent(this, homeActivity.class);
         } else if (id == R.id.nav_profil) {
-
+            Intent home = new Intent(homeActivity.this, profilActivity.class);
         } else if (id == R.id.nav_berkas) {
-
+            Intent home = new Intent(homeActivity.this, berkasActivity.class);
         } else if (id == R.id.nav_cetak) {
-
+            Intent home = new Intent(homeActivity.this, cetakActivity.class);
+        } else if (id == R.id.nav_sk){
+            Intent home = new Intent(homeActivity.this, syaratketentuanActivity.class);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
