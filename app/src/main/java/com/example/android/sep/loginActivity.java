@@ -84,8 +84,8 @@ public class loginActivity extends AppCompatActivity {
             Intent intent = new Intent(loginActivity.this, cetakActivity.class);
             intent.putExtra(TAG_ID_PENGGUNA, ID_PENGGUNA);
             intent.putExtra(TAG_NAMA_PENGGUNA, NAMA_PENGGUNA);
-            finish();
             startActivity(intent);
+            finish();
         }
         button6.setOnClickListener(new View.OnClickListener() {
 
@@ -115,8 +115,8 @@ public class loginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent sep = new Intent(loginActivity.this, daftarActivity.class);
-                finish();
                 startActivity(sep);
+                finish();
             }
         });
 
@@ -124,7 +124,7 @@ public class loginActivity extends AppCompatActivity {
     private void checkLogin(final String username, final String password) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
-        pDialog.setMessage("Logging in ...");
+        pDialog.setMessage("Masuk........");
         showDialog();
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -155,11 +155,11 @@ public class loginActivity extends AppCompatActivity {
                         editor.commit();
 
                         // Memanggil main activity
-                        Intent intent = new Intent(loginActivity.this, cetak2Activity.class);
+                        Intent intent = new Intent(loginActivity.this, cetakActivity.class);
                         intent.putExtra(TAG_ID_PENGGUNA, ID_PENGGUNA);
                         intent.putExtra(TAG_NAMA_PENGGUNA, NAMA_PENGGUNA);
-                        finish();
                         startActivity(intent);
+                        finish();
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
@@ -187,8 +187,8 @@ public class loginActivity extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("username", username);
-                params.put("password", password);
+                params.put("NAMA_PENGGUNA", String.valueOf(editText3));
+                params.put("KATA_SANDI", String.valueOf(editText4));
 
                 return params;
             }
