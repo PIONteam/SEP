@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".profilActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background2">
 
     <ImageView
         android:id="@+id/imageView8"
@@ -13,7 +13,6 @@
         android:layout_height="58dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="TODO"
-        android:src="@drawable/header"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,7 +45,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="138dp"
-        android:layout_height="51sp"
+        android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -58,7 +57,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.442"
@@ -66,7 +65,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="138dp"
+        android:layout_width="141dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -87,8 +86,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="138sp"
-        android:layout_height="51dp"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -108,8 +107,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="138sp"
-        android:layout_height="51sp"
+        android:layout_width="138dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -129,7 +128,7 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="138sp"
+        android:layout_width="138dp"
         android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:text="Alamat"
@@ -142,8 +141,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="138sp"
-        android:layout_height="51sp"
+        android:layout_width="138dp"
+        android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:text="KAta Sandi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -164,8 +163,8 @@
         tools:layout_editor_absoluteY="229dp" />
 
     <EditText
-        android:layout_width="200sp"
-        android:layout_height="51sp"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:inputType=""
         tools:ignore="MissingConstraints"
@@ -174,7 +173,7 @@
 
     <EditText
         android:layout_width="200dp"
-        android:layout_height="51sp"
+        android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:inputType=""
         tools:ignore="MissingConstraints"
@@ -200,7 +199,7 @@
         tools:layout_editor_absoluteY="280dp" />
 
     <EditText
-        android:layout_width="200sp"
+        android:layout_width="200dp"
         android:layout_height="51dp"
         android:background="@drawable/border_style"
         android:inputType=""
@@ -241,24 +240,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="157dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginBottom="512dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Profil"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="38sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintHorizontal_bias="0.288"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
