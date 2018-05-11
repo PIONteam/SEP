@@ -5,14 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_home">
+    tools:showIn="@layout/app_bar_home"
+    android:background="@drawable/background">
 
-    <TextView
-        android:id="@+id/tes"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="test aja"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
 
 </android.support.constraint.ConstraintLayout>

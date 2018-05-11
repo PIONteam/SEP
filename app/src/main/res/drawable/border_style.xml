@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-=======
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
->>>>>>> ab470981de6d256f220c0cd5ef285a3a9511dd95
-
     <stroke
         android:width="3dp"
         android:color="#ff808080"/>
