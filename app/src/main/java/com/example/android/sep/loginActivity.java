@@ -44,14 +44,14 @@ public class loginActivity extends AppCompatActivity {
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
 
-    public final static String TAG_NAMA_PENGGUNA = "NAMA_PENGGUNA";
-    public final static String TAG_ID_PENGGUNA = "ID_PENGGUNA";
+    public final static String TAG_NAMA_PENGGUNA = "nama_pengguna";
+    public final static String TAG_KATA_SANDI = "kata_sandi";
 
     String tag_json_obj = "json_obj_req";
 
     SharedPreferences sharedpreferences;
     Boolean session = false;
-    String ID_PENGGUNA, NAMA_PENGGUNA;
+    String kata_sandi, nama_pengguna;
     public static final String my_shared_preferences = "my_shared_preferences";
     public static final String session_status = "session_status";
 
@@ -77,13 +77,13 @@ public class loginActivity extends AppCompatActivity {
         // Cek session login jika TRUE maka langsung buka MainActivity
         sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
         session = sharedpreferences.getBoolean(session_status, false);
-        ID_PENGGUNA = sharedpreferences.getString(TAG_ID_PENGGUNA, null);
-        NAMA_PENGGUNA = sharedpreferences.getString(TAG_NAMA_PENGGUNA, null);
+        kata_sandi = sharedpreferences.getString(TAG_KATA_SANDI, null);
+        nama_pengguna = sharedpreferences.getString(TAG_NAMA_PENGGUNA, null);
 
         if (session) {
             Intent intent = new Intent(loginActivity.this, cetakActivity.class);
-            intent.putExtra(TAG_ID_PENGGUNA, ID_PENGGUNA);
-            intent.putExtra(TAG_NAMA_PENGGUNA, NAMA_PENGGUNA);
+            intent.putExtra(TAG_KATA_SANDI, kata_sandi);
+            intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
             startActivity(intent);
             finish();
         }
@@ -96,11 +96,11 @@ public class loginActivity extends AppCompatActivity {
                 String KATA_SANDI = editText4.getText().toString();
 
                 // mengecek kolom yang kosong
-                if (NAMA_PENGGUNA.trim().length() > 0 && KATA_SANDI.trim().length() > 0) {
+                if (nama_pengguna.trim().length() > 0 && kata_sandi.trim().length() > 0) {
                     if (conMgr.getActiveNetworkInfo() != null
                             && conMgr.getActiveNetworkInfo().isAvailable()
                             && conMgr.getActiveNetworkInfo().isConnected()) {
-                        checkLogin(NAMA_PENGGUNA, KATA_SANDI);
+                        checkLogin(nama_pengguna, kata_sandi);
                     } else {
                         Toast.makeText(getApplicationContext() ,"No Internet Connection", Toast.LENGTH_LONG).show();
                     }
@@ -121,10 +121,10 @@ public class loginActivity extends AppCompatActivity {
         });
 
     }
-    private void checkLogin(final String username, final String password) {
+    private void checkLogin(final String nama_pengguna, final String kata_sandi) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
-        pDialog.setMessage("Masuk........");
+        pDialog.setMessage("Masuk ...");
         showDialog();
 
         StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -140,8 +140,8 @@ public class loginActivity extends AppCompatActivity {
 
                     // Check for error node in json
                     if (success == 1) {
-                        String NAMA_PENGGUNA = jObj.getString(TAG_NAMA_PENGGUNA);
-                        String ID_PENGGUNA = jObj.getString(TAG_ID_PENGGUNA);
+                        String nama_pengguna= jObj.getString(TAG_NAMA_PENGGUNA);
+                        String kata_sandi = jObj.getString(TAG_KATA_SANDI);
 
                         Log.e("Successfully Login!", jObj.toString());
 
@@ -150,14 +150,14 @@ public class loginActivity extends AppCompatActivity {
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
-                        editor.putString(TAG_ID_PENGGUNA, ID_PENGGUNA);
-                        editor.putString(TAG_NAMA_PENGGUNA, NAMA_PENGGUNA);
+                        editor.putString(TAG_KATA_SANDI, kata_sandi);
+                        editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
                         editor.commit();
 
                         // Memanggil main activity
                         Intent intent = new Intent(loginActivity.this, cetakActivity.class);
-                        intent.putExtra(TAG_ID_PENGGUNA, ID_PENGGUNA);
-                        intent.putExtra(TAG_NAMA_PENGGUNA, NAMA_PENGGUNA);
+                        intent.putExtra(TAG_KATA_SANDI, kata_sandi);
+                        intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
                         startActivity(intent);
                         finish();
                     } else {
@@ -187,8 +187,8 @@ public class loginActivity extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("NAMA_PENGGUNA", String.valueOf(editText3));
-                params.put("KATA_SANDI", String.valueOf(editText4));
+                params.put("NAMA_PENGGUNA", nama_pengguna );
+                params.put("KATA_SANDI", kata_sandi);
 
                 return params;
             }

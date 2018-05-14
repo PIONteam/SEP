@@ -21,7 +21,6 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="109dp"
@@ -44,16 +43,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="138dp"
-        android:layout_height="51dp"
+        android:layout_width="120dp"
+        android:layout_height="28dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/border_style"
         android:text="Nama Lengkap"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,16 +63,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="141dp"
-        android:layout_height="51dp"
+        android:layout_width="117dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/border_style"
         android:text="Nama Pengguna"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,16 +83,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="138dp"
-        android:layout_height="56dp"
+        android:layout_width="119dp"
+        android:layout_height="23dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/border_style"
         android:text="Email"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,105 +103,168 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="138dp"
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nomor Telepon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Alamat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Kata Sandi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="199dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:inputType=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="200dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/border_style"
-        android:text="Nomor Telepone"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:inputType=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:inputType=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:inputType=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.748"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="138dp"
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="200dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_style"
-        android:text="Alamat"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="433dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="138dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border_style"
-        android:text="KAta Sandi"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="484dp" />
-
+        android:inputType=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_style"
         android:inputType=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="229dp" />
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border_style"
-        android:inputType=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="484dp" />
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border_style"
-        android:inputType=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="433dp" />
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border_style"
-        android:inputType=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="382dp" />
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border_style"
-        android:inputType=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="280dp" />
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border_style"
-        android:inputType=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"

@@ -14,15 +14,43 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.TextSliderView;
+
+import java.util.HashMap;
+
 public class homeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private SliderLayout sliderLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        sliderLayout = (SliderLayout) findViewById(R.id.slider);
+        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
+        file_maps.put("Jilid biasa",R.drawable.lakban);
+        file_maps.put("Jilid Spiral",R.drawable.spiral1);
+        file_maps.put("Hardcover",R.drawable.hard);
+        for(String name : file_maps.keySet()){
+            TextSliderView textSliderView = new TextSliderView(this);
+            // initialize a SliderLayout
+            textSliderView
+                    .description(name)
+                    .image(file_maps.get(name))
+                    .setScaleType(BaseSliderView.ScaleType.Fit);
+            //add your extra information
+            textSliderView.bundle(new Bundle());
+            textSliderView.getBundle()
+                    .putString("extra",name);
+            sliderLayout.addSlider(textSliderView);}
+        sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        sliderLayout.setCustomAnimation(new DescriptionAnimation());
+        sliderLayout.setDuration(4000);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -73,15 +101,28 @@ public class homeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            Intent home = new Intent(this, homeActivity.class);
-        } else if (id == R.id.nav_profil) {
-            Intent home = new Intent(homeActivity.this, profilActivity.class);
-        } else if (id == R.id.nav_berkas) {
-            Intent home = new Intent(homeActivity.this, berkasActivity.class);
-        } else if (id == R.id.nav_cetak) {
-            Intent home = new Intent(homeActivity.this, cetakActivity.class);
-        } else if (id == R.id.nav_sk){
-            Intent home = new Intent(homeActivity.this, syaratketentuanActivity.class);
+            Intent intent = new Intent(getApplicationContext(), homeActivity.class );
+            startActivity(intent);
+        }
+        if (id == R.id.nav_profil) {
+            Intent intent = new Intent(getApplicationContext(), profilActivity.class );
+            startActivity(intent);
+        }
+        if (id == R.id.nav_berkas) {
+            Intent intent = new Intent(getApplicationContext(), berkasActivity.class );
+            startActivity(intent);
+        }
+        if (id == R.id.nav_cetak) {
+            Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
+            startActivity(intent);
+        }
+        if (id == R.id.nav_sk) {
+            Intent intent = new Intent(getApplicationContext(), syaratketentuanActivity.class );
+            startActivity(intent);
+        }
+        if (id == R.id.nav_masuk) {
+            Intent intent = new Intent(getApplicationContext(), loginActivity.class );
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -89,3 +130,6 @@ public class homeActivity extends AppCompatActivity
         return true;
     }
 }
+
+
+

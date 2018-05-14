@@ -14,6 +14,9 @@
             android:id="@+id/nav_berkas"
             android:title="Berkas" />
         <item
+            android:id="@+id/nav_masuk"
+            android:title="Masuk" />
+        <item
             android:id="@+id/nav_cetak"
             android:title="Cetak File" />
         <item

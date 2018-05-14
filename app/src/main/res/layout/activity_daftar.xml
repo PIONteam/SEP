@@ -13,10 +13,19 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="604dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/timbul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -30,14 +39,13 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
+        app:layout_constraintVertical_bias="0.228" />
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -53,12 +61,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+        app:layout_constraintVertical_bias="0.33" />
 
 
     <EditText
         android:id="@+id/editText5"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -74,12 +82,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
+        app:layout_constraintVertical_bias="0.432" />
 
 
     <EditText
         android:id="@+id/editText6"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -95,12 +103,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
+        app:layout_constraintVertical_bias="0.534" />
 
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -114,14 +122,13 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.636" />
 
     <EditText
         android:id="@+id/editText8"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -136,11 +143,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.743" />
 
     <EditText
         android:id="@+id/editText9"
-        android:layout_width="275dp"
+        android:layout_width="246dp"
         android:layout_height="51dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -155,11 +162,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.832" />
+
     <Button
         android:id="@+id/button9"
         android:layout_width="81dp"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
@@ -170,16 +178,16 @@
         android:text="Daftar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984"
+        app:layout_constraintVertical_bias="0.934"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="253dp"
-        android:layout_height="46dp"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -192,10 +200,9 @@
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.128" />
 
     <TextView
         android:id="@+id/textView37"

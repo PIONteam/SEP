@@ -154,8 +154,7 @@ public class daftarActivity extends AppCompatActivity {
 
                 hideDialog();
 
-            }
-        }) {
+            }}) {
 
             @Override
             protected Map<String, String> getParams() {
