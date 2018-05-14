@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="match_parent"
+        android:layout_width="388dp"
         android:layout_height="wrap_content"
         android:background="@drawable/background2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -172,14 +172,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Orientasi
-"
+        android:text="Orientasi"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView36"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <TextView
         android:id="@+id/textView9"
@@ -199,17 +198,23 @@
         app:layout_constraintVertical_bias="0.636" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="143dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Cetak"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView36"
-        app:layout_constraintVertical_bias="0.732"
-        tools:layout_editor_absoluteX="191dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="146dp"

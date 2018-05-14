@@ -8,9 +8,23 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".homeActivity"
     tools:showIn="@layout/app_bar_home">
+
     <com.daimajia.slider.library.SliderLayout
         android:id="@+id/slider"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        />
+        android:layout_height="200dp" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tata Cara"
+            android:textColor="@android:color/holo_orange_light"
+            android:textStyle="bold" />
+
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.constraint.ConstraintLayout>

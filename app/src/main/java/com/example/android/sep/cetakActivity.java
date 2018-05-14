@@ -27,7 +27,7 @@ private Button button2;
                 android.R.layout.simple_spinner_dropdown_item,list);
         spinner.setAdapter(AdapterList);
 
-        String list1[]={"Portrait","Hitam putih"};
+        String list1[]={"Portrait","Landscape"};
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
         ArrayAdapter<String> AdapterList1 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item,list1);
