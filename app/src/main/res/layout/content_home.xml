@@ -16,11 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constrainBottom_toBottomOf="parent"
-        app:layout_constrainEnd_toEndOf="parent"
-        app:layout_constrainHorizontal_bias="0.0"
-        app:layout_constrainStart_toStartOf="parent">
+        android:orientation="vertical">
 
         <com.daimajia.slider.library.SliderLayout
             android:id="@+id/slider"

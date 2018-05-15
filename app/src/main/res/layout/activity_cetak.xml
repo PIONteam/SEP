@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.169"
         tools:ignore="MissingConstraints" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText11"
         android:layout_width="231dp"
         android:layout_height="43dp"
