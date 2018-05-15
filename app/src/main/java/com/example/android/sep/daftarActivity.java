@@ -65,33 +65,33 @@ public class daftarActivity extends AppCompatActivity {
         editText7=(EditText)findViewById(R.id.editText7);
         editText8=(EditText)findViewById(R.id.editText8);
         editText9=(EditText)findViewById(R.id.editText9);
-        button9.setOnClickListener(new View.OnClickListener() {
 
+       /* button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                intent = new Intent(daftarActivity.this, loginActivity.class);
+                Intent intent = new Intent(daftarActivity.this, loginActivity.class);
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
         button9.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                String NAMA_LENGKAP = editText3.getText().toString();
-                String NAMA_PENGGUNA = editText4.getText().toString();
-                String EMAL = editText5.getText().toString();
-                String NO_TELEPON = editText6.getText().toString();
-                String ALAMAT= editText7.getText().toString();
-                String KATA_SANDI = editText8.getText().toString();
-                String KONFIRMASI_KATA_SANDI = editText9.getText().toString();
+                String nama_lengkap = editText3.getText().toString();
+                String nama_pengguna = editText4.getText().toString();
+                String email = editText5.getText().toString();
+                String no_telepon = editText6.getText().toString();
+                String alamat = editText7.getText().toString();
+                String kata_sandi = editText8.getText().toString();
+                String konfifrmasi_kata_sandi = editText9.getText().toString();
 
                 if (conMgr.getActiveNetworkInfo() != null
                         && conMgr.getActiveNetworkInfo().isAvailable()
                         && conMgr.getActiveNetworkInfo().isConnected()) {
-                    checkRegister(NAMA_LENGKAP,NAMA_PENGGUNA, EMAL, NO_TELEPON, ALAMAT, KATA_SANDI, KONFIRMASI_KATA_SANDI);
+                    checkRegister(nama_lengkap,nama_pengguna, email, no_telepon, alamat, kata_sandi, konfifrmasi_kata_sandi);
                 } else {
                     Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                 }
@@ -100,7 +100,7 @@ public class daftarActivity extends AppCompatActivity {
 
     }
 
-    private void checkRegister(final String nama_lengkap,final String nama_pengguna,final String emal,final String no_telepon,final String alamat,final String kata_sandi,final String konfirmasi_kata_sandi) {
+    private void checkRegister(final String nama_lengkap,final String nama_pengguna,final String email,final String no_telepon,final String alamat,final String kata_sandi,final String konfirmasi_kata_sandi) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Register ...");
@@ -160,13 +160,13 @@ public class daftarActivity extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("NAMA_LENGKAP", String.valueOf(editText3));
-                params.put("NAMA_PENGGUNA", String.valueOf(editText4));
-                params.put("EMAL", String.valueOf(editText5));
-                params.put("NO_TELEPON", String.valueOf(editText6));
-                params.put("ALAMAT",String.valueOf(editText7));
-                params.put("KATA_SANDI", String.valueOf(editText8));
-                params.put("KONFIFRMASI_KATA_SANDI", String.valueOf(editText9));
+                params.put("nama_lengkap", nama_lengkap);
+                params.put("nama_pengguna", nama_pengguna);
+                params.put("email", email);
+                params.put("no_telepon", no_telepon);
+                params.put("alamat",alamat);
+                params.put("kata_sandi", kata_sandi);
+                params.put("konfirmasi_kata_sandi", konfirmasi_kata_sandi);
 
                 return params;
             }
