@@ -1,8 +1,6 @@
 package com.example.android.sep;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,17 +21,13 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
 import java.util.HashMap;
 
-import static com.example.android.sep.loginActivity.TAG_KATA_SANDI;
-import static com.example.android.sep.loginActivity.TAG_NAMA_PENGGUNA;
-
-public class homeActivity extends AppCompatActivity
+public class homesebelumActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    SharedPreferences sharedpreferences;
     private SliderLayout sliderLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_homesebelum);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
@@ -57,7 +51,6 @@ public class homeActivity extends AppCompatActivity
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
         sliderLayout.setDuration(4000);
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -77,7 +70,16 @@ public class homeActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-    
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        return super.onOptionsItemSelected(item);
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -85,40 +87,17 @@ public class homeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_profil) {
-            Intent intent = new Intent(getApplicationContext(), profilActivity.class );
-            startActivity(intent);
-        }
-        if (id == R.id.nav_cetak) {
-            Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
-            startActivity(intent);
-        }
-        if (id == R.id.nav_status) {
-            Intent intent = new Intent(getApplicationContext(), berkasActivity.class );
-            startActivity(intent);
-        }
         if (id == R.id.nav_outlet) {
             Intent intent = new Intent(getApplicationContext(), pilihsepActivity.class );
             startActivity(intent);
         }
-        if (id == R.id.nav_keluar) {
-            sharedpreferences = getSharedPreferences(loginActivity.my_shared_preferences, Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedpreferences.edit();
-            editor.putBoolean(loginActivity.session_status, false);
-            editor.putString(TAG_KATA_SANDI, null);
-            editor.putString(TAG_NAMA_PENGGUNA, null);
-            editor.commit();
-
-            Intent intent = new Intent(getApplicationContext(), homesebelumActivity.class );
-            finish();
+        if (id == R.id.nav_masuk) {
+            Intent intent = new Intent(getApplicationContext(), loginActivity.class );
             startActivity(intent);
+            finish();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
-
-
-

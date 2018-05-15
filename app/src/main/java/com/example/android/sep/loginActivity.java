@@ -155,7 +155,7 @@ public class loginActivity extends AppCompatActivity {
                         editor.commit();
 
                         // Memanggil main activity
-                        Intent intent = new Intent(loginActivity.this, cetakActivity.class);
+                        Intent intent = new Intent(loginActivity.this, homeActivity.class);
                         intent.putExtra(TAG_KATA_SANDI, kata_sandi);
                         intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
                         startActivity(intent);
@@ -197,6 +197,14 @@ public class loginActivity extends AppCompatActivity {
 
         // Adding request to request queue
         App_Controller.getInstance().addToRequestQueue(strReq, tag_json_obj);
+    }
+    @Override
+    public void onBackPressed()
+    {Intent intent = new Intent(getApplicationContext(), homesebelumActivity.class);
+        startActivity(intent);
+        finish();
+        // code here to show dialog
+        super.onBackPressed();  // optional depending on your needs
     }
 
     private void showDialog() {
