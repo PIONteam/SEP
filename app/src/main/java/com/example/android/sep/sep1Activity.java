@@ -12,18 +12,7 @@ private Button button18;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_sep1);
 
-        button18=(Button)findViewById(R.id.button18);
-
-        // function tombol
-        button18.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sep1 = new Intent(getApplicationContext(),cetakActivity.class);
-                startActivity(sep1);
-            }
-        });
     }
 }

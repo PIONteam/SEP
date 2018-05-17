@@ -14,15 +14,6 @@ public class sep4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sep4);
 
-        button21=(Button)findViewById(R.id.button21);
 
-        // function tombol
-        button21.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sep4 = new Intent(getApplicationContext(),loginActivity.class);
-                startActivity(sep4);
-            }
-        });
     }
 }

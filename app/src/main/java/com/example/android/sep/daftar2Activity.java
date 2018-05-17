@@ -12,7 +12,6 @@ private Button button17;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_daftar2);
 
         button17=(Button)findViewById(R.id.button17);
