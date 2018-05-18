@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -43,15 +45,12 @@
                 android:layout_height="33dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@android:color/holo_green_light"
                 android:text="@string/pilih"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.703"
-                app:layout_constraintStart_toEndOf="@+id/editText11"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.148"
                 tools:ignore="MissingConstraints" />
@@ -61,13 +60,12 @@
                 android:layout_width="162dp"
                 android:layout_height="26dp"
                 android:layout_marginStart="48dp"
-                android:layout_marginTop="8dp"
                 android:text="ukuran maksimal 30mb"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText11"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="167dp" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -86,35 +84,19 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/editText11"
-                android:layout_width="231dp"
-                android:layout_height="43dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/border_style"
-                android:textColor="@android:color/black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.197"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
                 android:id="@+id/textView14"
                 android:layout_width="252dp"
                 android:layout_height="34dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="56dp"
                 android:text="@string/pengaturan_file"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.379"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText11"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="215dp" />
 
             <Spinner
                 android:id="@+id/spinner"
@@ -331,6 +313,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/radioGroup"
                 tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="227dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="124dp"
+                android:background="@drawable/border_style"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
