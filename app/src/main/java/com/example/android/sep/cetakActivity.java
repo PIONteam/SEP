@@ -22,25 +22,25 @@ private Button button2;
         setContentView(R.layout.activity_cetak);
 
 
-        String list[]={"Berwarna","Hitam putih"};
+        String list[]={"--Pilih warna--","Berwarna","Hitam putih"};
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<String> AdapterList = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item,list);
         spinner.setAdapter(AdapterList);
 
-        String list1[]={"Portrait","Landscape"};
+        String list1[]={"--Pilih Orientasi--","Portrait","Landscape"};
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
         ArrayAdapter<String> AdapterList1 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item,list1);
         spinner1.setAdapter(AdapterList1);
 
-        String list2[]={"F4","A4"};
+        String list2[]={"--Pilih Kertas--","F4","A4"};
         Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
         ArrayAdapter<String> AdapterList2 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item,list2);
         spinner2.setAdapter(AdapterList2);
 
-        String list3[]={"Jilid Mika","Jilid Jepang","Jilid Spiral"};
+        String list3[]={"--Pilih Layanan--","Staples saja","Jilid Mika","Jilid Jepang","Jilid Spiral"};
         Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
         ArrayAdapter<String> AdapterList3 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item,list3);

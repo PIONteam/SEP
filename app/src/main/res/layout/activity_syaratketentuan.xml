@@ -57,8 +57,8 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="49dp"
-        android:layout_height="40dp"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -75,12 +75,12 @@
     <TextView
         android:id="@+id/textView22"
         android:layout_width="323dp"
-        android:layout_height="63dp"
+        android:layout_height="72dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Tunjukan Nomor File Kepada Petugas Saat Akan Mengambil Dokumen"
+        android:text="Tunjukan Nomor File kepada petugas saat akan mengambil dokumen"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"

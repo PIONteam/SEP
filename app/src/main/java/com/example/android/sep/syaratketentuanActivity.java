@@ -7,24 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class syaratketentuanActivity extends AppCompatActivity {
-private Button button19, button20;
+private Button button3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syaratketentuan);
 
-        button19=(Button)findViewById(R.id.button19);
-        button20=(Button)findViewById(R.id.button20);
+        button3=(Button)findViewById(R.id.button3);
 
         // function tombol
-        button19.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),cetak2Activity.class);
-                startActivity(sep);
-            }
-        }); // function tombol
-        button20.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent sep = new Intent(getApplicationContext(),berkasActivity.class);
