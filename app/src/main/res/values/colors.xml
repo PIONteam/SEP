@@ -4,6 +4,4 @@
         <color name="colorPrimaryDark">@color/primary_dark_material_dark</color>
         <color name="test">#ff2800</color>
         <color name="colorAccent">@android:color/white</color>
-        <color name="color">#FF808080</color>
-    <color name="primary_material_dark">#d71818</color>
 </resources>

@@ -91,6 +91,10 @@ public class homesebelumActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), pilihsepActivity.class );
             startActivity(intent);
         }
+        if (id == R.id.nav_cetak) {
+            Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
+            startActivity(intent);
+        }
         if (id == R.id.nav_masuk) {
             Intent intent = new Intent(getApplicationContext(), loginActivity.class );
             startActivity(intent);

@@ -14,6 +14,15 @@ public class sep3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sep3);
 
+        button20=(Button)findViewById(R.id.button20);
 
+        // function tombol
+        button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sep3 = new Intent(getApplicationContext(),loginActivity.class);
+                startActivity(sep3);
+            }
+        });
     }
 }

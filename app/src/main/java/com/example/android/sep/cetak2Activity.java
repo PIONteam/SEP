@@ -7,16 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class cetak2Activity extends AppCompatActivity {
-private Button button8;
+private Button btnKonf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cetak2);
 
-        button8=(Button)findViewById(R.id.button8);
+        btnKonf=(Button)findViewById(R.id.button7);
 
         // function tombol
-        button8.setOnClickListener(new View.OnClickListener() {
+        btnKonf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent sep = new Intent(getApplicationContext(),syaratketentuanActivity.class);

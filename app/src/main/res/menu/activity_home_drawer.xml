@@ -2,12 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view"
-    android:background="#FF808080">
+    android:background="@drawable/background">
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_home"
+            android:title="Beranda" />
+        <item
             android:id="@+id/nav_profil"
             android:title="Profil" />
+        <item
+            android:id="@+id/nav_berkas"
+            android:title="Berkas" />
         <item
             android:id="@+id/nav_cetak"
             android:title="Cetak File" />
@@ -18,8 +24,11 @@
             android:id="@+id/nav_outlet"
             android:title="Outlet" />
         <item
-            android:id="@+id/nav_keluar"
-            android:title="Keluar" />
+            android:id="@+id/nav_sk"
+            android:title="Syarat dan Ketentuan"/>
+        <item
+            android:id="@+id/nav_masuk"
+            android:title="Masuk" />
     </group>
 
 </menu>

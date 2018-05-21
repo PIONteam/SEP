@@ -6,25 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".homeActivity">
 
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="162dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="556dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="108dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Beranda"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.328"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214"
-        tools:ignore="MissingConstraints" />
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
