@@ -13,15 +13,6 @@ private Button button3;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syaratketentuan);
 
-        button3=(Button)findViewById(R.id.button3);
 
-        // function tombol
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),berkasActivity.class);
-                startActivity(sep);
-            }
-        });
     }
 }

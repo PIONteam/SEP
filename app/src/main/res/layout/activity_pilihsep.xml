@@ -32,7 +32,6 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView36"
             android:layout_width="210dp"
             android:layout_height="39dp"
             android:layout_marginBottom="556dp"
@@ -104,14 +103,7 @@
             android:height="137dp"
             android:background="@drawable/logo7"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.649"
-=======
-            app:layout_constraintTop_toBottomOf="@+id/button14"
->>>>>>> b49f17c7f3c9230266e21eb84701f16458006b31
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button14"
@@ -152,8 +144,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button11"
             tools:ignore="MissingConstraints" />
 
-<<<<<<< HEAD
-=======
+
         <TextView
             android:id="@+id/textView36"
             android:layout_width="wrap_content"

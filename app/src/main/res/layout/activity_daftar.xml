@@ -14,14 +14,16 @@
         android:layout_alignParentTop="true" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="604dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="456dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/timbul"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editText3"
@@ -162,7 +164,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintVertical_bias="0.848" />
 
     <Button
         android:id="@+id/button9"
@@ -178,10 +180,10 @@
         android:text="Daftar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934"
+        app:layout_constraintVertical_bias="0.96"
         tools:ignore="MissingConstraints" />
 
     <TextView

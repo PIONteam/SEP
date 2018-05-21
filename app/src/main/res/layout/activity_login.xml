@@ -8,12 +8,18 @@
     android:background="@drawable/background2">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="423dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="382dp"
+        android:layout_height="443dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/timbul"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
 
     <TextView
         android:id="@+id/textView27"
@@ -154,7 +160,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="108dp"
         android:fontFamily="@font/fredoka_one"
-        android:text="Daftar"
+        android:text="Masuk"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="34sp"
         android:textStyle="bold"
