@@ -34,7 +34,7 @@ private Button button2;
                 android.R.layout.simple_spinner_dropdown_item,list1);
         spinner1.setAdapter(AdapterList1);
 
-        String list2[]={"--Pilih Kertas--","F4","A4"};
+        String list2[]={"--Pilih Kertas--","A4 70 gr","A4 80 gr","F4 70 gr","F4 80 gr"};
         Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
         ArrayAdapter<String> AdapterList2 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item,list2);

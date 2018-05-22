@@ -44,7 +44,7 @@
                 android:layout_width="71dp"
                 android:layout_height="45dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="24dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginTop="8dp"
                 android:background="@android:color/holo_green_light"
                 android:text="@string/pilih"
@@ -52,7 +52,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.111"
+                app:layout_constraintVertical_bias="0.1"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -76,7 +76,7 @@
                 android:layout_height="32dp"
                 android:layout_marginEnd="176dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:text="@string/pilih_file_anda"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="16sp"
@@ -174,7 +174,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.645"
+                app:layout_constraintHorizontal_bias="0.543"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -186,7 +186,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.645"
+                app:layout_constraintHorizontal_bias="0.543"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/spinner" />
 
@@ -198,7 +198,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.643"
+                app:layout_constraintHorizontal_bias="0.541"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
@@ -212,7 +212,7 @@
                 android:src="@drawable/pnh"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.643"
+                app:layout_constraintHorizontal_bias="0.541"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView11"
                 app:layout_constraintVertical_bias="0.0" />
@@ -264,7 +264,7 @@
 
             <EditText
                 android:id="@+id/EditText03"
-                android:layout_width="193dp"
+                android:layout_width="212dp"
                 android:layout_height="39dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
@@ -283,7 +283,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border_style"
-                android:gravity="top|left"
                 android:inputType="textMultiLine"
                 android:lines="5"
                 android:maxWidth="180dip"
@@ -295,36 +294,39 @@
                 app:layout_constraintHorizontal_bias="0.061"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView21"
-                app:layout_constraintVertical_bias="0.025"
+                app:layout_constraintVertical_bias="0.126"
                 tools:ignore="MissingConstraints" />
 
             <Button
                 android:id="@+id/btnCetak"
                 android:layout_width="113dp"
-                android:layout_height="45dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:background="#eea34e"
-                android:text="cetak file"
+                android:text="cetak file>>"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.519"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EditText02" />
+                app:layout_constraintTop_toBottomOf="@+id/EditText02"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="22dp"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="12dp"
                 android:text="Tambahkan komentar tambahan jika ada :"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.271"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/EditText0"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -346,25 +348,28 @@
                 android:layout_height="0dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="24dp"
                 android:gravity="top|left"
                 android:text="Salinan"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/EditText0"
-                app:layout_constraintHorizontal_bias="0.292"
+                app:layout_constraintHorizontal_bias="0.482"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EditText03"
                 tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/EditText0"
-                android:layout_width="66dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="108dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="53dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/border_style"
                 android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EditText03" />
         </android.support.constraint.ConstraintLayout>

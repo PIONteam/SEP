@@ -120,7 +120,7 @@ public class daftarActivity extends AppCompatActivity {
                     // Check for error node in json
                     if (success == 1) {
 
-                        Intent sep = new Intent(getApplicationContext(),smsActivity.class);
+                        Intent sep = new Intent(getApplicationContext(),daftar2Activity.class);
                         startActivity(sep);
 
                         Toast.makeText(getApplicationContext(),
