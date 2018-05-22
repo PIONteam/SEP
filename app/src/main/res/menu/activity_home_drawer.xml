@@ -19,7 +19,7 @@
             android:title="Status" />
         <item
             android:id="@+id/nav_tentang"
-            android:title="Outlet" />
+            android:title="Tentang" />
         <item
             android:id="@+id/nav_keluar"
             android:title="Keluar"/>
