@@ -53,8 +53,6 @@
 
         <activity android:name=".tentangActivity"></activity>
 
-        <activity android:name=".smsActivity"></activity>
-
     </application>
 
 </manifest>
