@@ -1,7 +1,7 @@
 package com.example.android.sep;
 
 public class Server {
-        public static final String URL = "http://192.168.43.124/sep/";
+        public static final String URL = "http://tifpolije2k16.xyz/";
     }
 
 

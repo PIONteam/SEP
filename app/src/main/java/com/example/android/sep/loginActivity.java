@@ -80,7 +80,7 @@ public class loginActivity extends AppCompatActivity {
         nama_pengguna = sharedpreferences.getString(TAG_NAMA_PENGGUNA, null);
 
         if (session) {
-            Intent intent = new Intent(loginActivity.this, cetakActivity.class);
+            Intent intent = new Intent(loginActivity.this, homeActivity.class);
             intent.putExtra(TAG_KATA_SANDI, kata_sandi);
             intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
             startActivity(intent);
