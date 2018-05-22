@@ -19,8 +19,8 @@ private Button button5;
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sep = new Intent(getApplicationContext(),syaratketentuanActivity.class);
-                startActivity(sep);
+                Intent cetak = new Intent(getApplicationContext(),syaratketentuanActivity.class);
+                startActivity(cetak);
             }
         });
     }
