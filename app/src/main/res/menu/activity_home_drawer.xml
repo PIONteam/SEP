@@ -6,9 +6,6 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:title="Beranda" />
-        <item
             android:id="@+id/nav_profil"
             android:title="Profil" />
         <item
@@ -24,11 +21,9 @@
             android:id="@+id/nav_outlet"
             android:title="Outlet" />
         <item
-            android:id="@+id/nav_sk"
-            android:title="Syarat dan Ketentuan"/>
-        <item
-            android:id="@+id/nav_masuk"
-            android:title="Masuk" />
+            android:id="@+id/nav_keluar"
+            android:title="Keluar"/>
+
     </group>
 
 </menu>

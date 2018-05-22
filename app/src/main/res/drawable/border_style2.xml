@@ -11,7 +11,7 @@
         android:right="10dp"
         android:bottom="5dp"/>
     <solid
-        android:color="#ffc0c0c0"/>
+        android:color="#1A000000"/>
     <size
         android:height="20dp"/>
 

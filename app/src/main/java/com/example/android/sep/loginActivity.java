@@ -58,7 +58,6 @@ public class loginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
         conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         {
@@ -92,8 +91,8 @@ public class loginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                String NAMA_PENGGUNA = editText3.getText().toString();
-                String KATA_SANDI = editText4.getText().toString();
+                String nama_pengguna = editText3.getText().toString();
+                String kata_sandi = editText4.getText().toString();
 
                 // mengecek kolom yang kosong
                 if (nama_pengguna.trim().length() > 0 && kata_sandi.trim().length() > 0) {
@@ -155,7 +154,7 @@ public class loginActivity extends AppCompatActivity {
                         editor.commit();
 
                         // Memanggil main activity
-                        Intent intent = new Intent(loginActivity.this, cetakActivity.class);
+                        Intent intent = new Intent(loginActivity.this, homeActivity.class);
                         intent.putExtra(TAG_KATA_SANDI, kata_sandi);
                         intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
                         startActivity(intent);
@@ -197,6 +196,14 @@ public class loginActivity extends AppCompatActivity {
 
         // Adding request to request queue
         App_Controller.getInstance().addToRequestQueue(strReq, tag_json_obj);
+    }
+    @Override
+    public void onBackPressed()
+    {Intent intent = new Intent(getApplicationContext(), homesebelumActivity.class);
+        startActivity(intent);
+        finish();
+        // code here to show dialog
+        super.onBackPressed();  // optional depending on your needs
     }
 
     private void showDialog() {

@@ -1,6 +1,8 @@
 package com.example.android.sep;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -21,8 +23,12 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
 import java.util.HashMap;
 
+import static com.example.android.sep.loginActivity.TAG_KATA_SANDI;
+import static com.example.android.sep.loginActivity.TAG_NAMA_PENGGUNA;
+
 public class homeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    SharedPreferences sharedpreferences;
     private SliderLayout sliderLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +77,7 @@ public class homeActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-    
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -79,20 +85,16 @@ public class homeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            Intent intent = new Intent(getApplicationContext(), homeActivity.class );
-            startActivity(intent);
-        }
         if (id == R.id.nav_profil) {
             Intent intent = new Intent(getApplicationContext(), profilActivity.class );
             startActivity(intent);
         }
-        if (id == R.id.nav_berkas) {
-            Intent intent = new Intent(getApplicationContext(), berkasActivity.class );
-            startActivity(intent);
-        }
         if (id == R.id.nav_cetak) {
             Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
+            startActivity(intent);
+        }
+        if (id == R.id.nav_berkas) {
+            Intent intent = new Intent(getApplicationContext(), berkasActivity.class );
             startActivity(intent);
         }
         if (id == R.id.nav_status) {
@@ -103,12 +105,16 @@ public class homeActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), pilihsepActivity.class );
             startActivity(intent);
         }
-        if (id == R.id.nav_sk) {
-            Intent intent = new Intent(getApplicationContext(), syaratketentuanActivity.class );
-            startActivity(intent);
-        }
-        if (id == R.id.nav_masuk) {
-            Intent intent = new Intent(getApplicationContext(), loginActivity.class );
+        if (id == R.id.nav_keluar) {
+            sharedpreferences = getSharedPreferences(loginActivity.my_shared_preferences, Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.putBoolean(loginActivity.session_status, false);
+            editor.putString(TAG_KATA_SANDI, null);
+            editor.putString(TAG_NAMA_PENGGUNA, null);
+            editor.commit();
+
+            Intent intent = new Intent(getApplicationContext(), homesebelumActivity.class );
+            finish();
             startActivity(intent);
         }
 

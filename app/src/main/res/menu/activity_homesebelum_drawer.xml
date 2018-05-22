@@ -10,9 +10,7 @@
         <item
             android:id="@+id/nav_masuk"
             android:title="Masuk" />
-        <item
-            android:id="@+id/nav_cetak"
-            android:title="Cetak"/>
+
     </group>
 
 </menu>

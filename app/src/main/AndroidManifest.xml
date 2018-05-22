@@ -26,7 +26,8 @@
         <activity android:name=".sep1Activity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
-        <activity android:name=".cetakActivity" />
+        <activity android:name=".cetakActivity"
+            android:theme="@style/AppTheme2"/>
         <activity android:name=".daftarActivity" />
         <activity android:name=".daftar2Activity" />
         <activity android:name=".sep2Activity" />
@@ -45,7 +46,11 @@
         <activity android:name=".cetak2Activity" />
         <activity
             android:name=".homeActivity"
-            android:label="@string/title_activity_home"
+            android:label="Beranda"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".homesebelumActivity"
+            android:label="Beranda"
             android:theme="@style/AppTheme"></activity>
     </application>
 
