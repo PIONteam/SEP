@@ -46,11 +46,11 @@
             android:name=".homesebelumActivity"
             android:label="Beranda"
             android:theme="@style/AppTheme" />
-<<<<<<< HEAD
+
         <activity android:name=".tentangActivity"></activity>
-=======
+
         <activity android:name=".smsActivity"></activity>
->>>>>>> b5c162821c1c13713fcd6c8630367bdd978a9981
+
     </application>
 
 </manifest>
