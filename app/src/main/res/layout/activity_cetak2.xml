@@ -30,16 +30,17 @@
             android:textStyle="bold"
             android:typeface="serif"
             android:textSize="25sp"/>
+
         <TextView
             android:id="@+id/textView25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="16sp"
             android:text="Berkas:"
-            android:paddingTop="18dp"
             android:textColor="@android:color/holo_orange_dark"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:typeface="serif"            />
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView26"
@@ -68,7 +69,7 @@
             android:text="Pengaturan File"
             android:textAlignment="center"
             android:textColor="@android:color/holo_orange_light"
-            android:textSize="23sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:typeface="serif"
             android:layout_marginTop="15dp"/>
@@ -78,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Warna"
+            android:textSize="16sp"
             android:textColor="@android:color/background_light"
             android:textStyle="bold"
             android:layout_marginTop="8dp"/>
@@ -87,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ukuran kertas"
+            android:textSize="16sp"
             android:textColor="@android:color/background_light"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
@@ -96,6 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Orientasi"
+            android:textSize="16sp"
             android:textColor="@android:color/background_light"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
@@ -105,6 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cetak"
+            android:textSize="16sp"
             android:textColor="@android:color/background_light"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
@@ -114,6 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Setelah cetak"
+            android:textSize="16sp"
             android:textColor="@android:color/background_light"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
@@ -123,6 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salinan"
+            android:textSize="16sp"
             android:textColor="@android:color/background_light"
             android:textStyle="bold"
             android:layout_marginTop="10dp"/>
@@ -133,7 +140,7 @@
             android:layout_height="wrap_content"
             android:text="Keterangan Anda:"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="16sp"
             android:typeface="serif"
             android:textColor="@android:color/holo_orange_dark"
             android:layout_marginTop="12dp"/>

@@ -13,7 +13,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -22,28 +22,30 @@
 
             <TextView
                 android:id="@+id/textView17"
-                android:layout_width="259dp"
+                android:layout_width="240dp"
                 android:layout_height="33dp"
-                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="8dp"
                 android:text="Siapkan file anda"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:typeface="serif"
+                app:layout_constraintBottom_toTopOf="@+id/textView13"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.781"
+                app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="56dp"
-                android:layout_height="33dp"
+                android:layout_width="71dp"
+                android:layout_height="41dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="24dp"
                 android:layout_marginTop="8dp"
                 android:background="@android:color/holo_green_light"
                 android:text="@string/pilih"
@@ -51,20 +53,19 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.148"
+                app:layout_constraintVertical_bias="0.1"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="162dp"
-                android:layout_height="26dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="40dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginStart="8dp"
                 android:text="ukuran maksimal 30mb"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.186"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView23"
                 tools:ignore="MissingConstraints" />
@@ -78,7 +79,7 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/pilih_file_anda"
                 android:textColor="@android:color/holo_orange_dark"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -87,16 +88,15 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="252dp"
+                android:layout_width="130dp"
                 android:layout_height="34dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
                 android:text="@string/pengaturan_file"
                 android:textColor="@android:color/holo_orange_dark"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintHorizontal_bias="0.037"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView12"
                 tools:ignore="MissingConstraints" />
@@ -107,12 +107,12 @@
                 android:layout_height="39dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
                 android:background="@drawable/border_style2"
                 android:drawSelectorOnTop="true"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.471"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14"
                 tools:ignore="InvalidId,MissingConstraints" />
@@ -127,6 +127,7 @@
                 android:drawSelectorOnTop="true"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinner"
                 tools:ignore="InvalidId,MissingConstraints" />
@@ -141,6 +142,7 @@
                 android:drawSelectorOnTop="true"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinner1"
                 tools:ignore="InvalidId,MissingConstraints" />
@@ -157,7 +159,7 @@
                 android:textColor="@android:color/black"
                 app:layout_constraintBottom_toTopOf="@+id/radioGroup"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.471"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinner2"
                 app:layout_constraintVertical_bias="0.0"
@@ -171,7 +173,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.76"
+                app:layout_constraintHorizontal_bias="0.645"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -183,7 +185,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.76"
+                app:layout_constraintHorizontal_bias="0.645"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/spinner" />
 
@@ -195,7 +197,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.761"
+                app:layout_constraintHorizontal_bias="0.643"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
@@ -209,7 +211,7 @@
                 android:src="@drawable/pnh"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.761"
+                app:layout_constraintHorizontal_bias="0.643"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView11"
                 app:layout_constraintVertical_bias="0.0" />
@@ -218,8 +220,8 @@
                 android:id="@+id/radioGroup"
                 android:layout_width="224dp"
                 android:layout_height="84dp"
-                android:layout_marginStart="68dp"
-                android:layout_marginTop="444dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="352dp"
                 android:onClick="radiocheked"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -262,7 +264,8 @@
                 android:id="@+id/EditText03"
                 android:layout_width="193dp"
                 android:layout_height="39dp"
-                android:layout_marginStart="84dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/border_style"
                 android:textColor="@android:color/black"
                 app:layout_constraintStart_toStartOf="parent"
@@ -313,6 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="22dp"
                 android:layout_marginTop="120dp"
+                android:gravity="top|left"
                 android:text="Tambahkan komentar tambahan jika ada :"
                 android:textColor="@android:color/holo_orange_dark"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -326,11 +330,10 @@
                 android:layout_height="45dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 android:background="@drawable/border_style"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.23"
+                app:layout_constraintHorizontal_bias="0.068"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -342,6 +345,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="36dp"
                 android:text="Salinan"
+                android:gravity="top|left"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/EditText0"
                 app:layout_constraintHorizontal_bias="0.74"

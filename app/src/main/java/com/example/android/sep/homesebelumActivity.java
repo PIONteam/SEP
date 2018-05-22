@@ -87,8 +87,8 @@ public class homesebelumActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_outlet) {
-            Intent intent = new Intent(getApplicationContext(), pilihsepActivity.class );
+        if (id == R.id.nav_tentang) {
+            Intent intent = new Intent(getApplicationContext(), tentangActivity.class );
             startActivity(intent);
         }
         if (id == R.id.nav_masuk) {

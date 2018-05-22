@@ -7,20 +7,6 @@
     tools:context=".loginActivity"
     android:background="@drawable/background2">
 
-    <ImageView
-        android:layout_width="382dp"
-        android:layout_height="443dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/timbul"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583" />
-
     <TextView
         android:id="@+id/textView27"
         android:layout_width="274dp"
@@ -154,22 +140,21 @@
 
     <TextView
         android:id="@+id/textView38"
-        android:layout_width="162dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="556dp"
+        android:layout_width="122dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Masuk"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="34sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

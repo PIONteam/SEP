@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.sep">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -22,20 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pilihsepActivity" />
-        <activity android:name=".sep1Activity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
-        <activity android:name=".cetakActivity"
-            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".cetakActivity"
+            android:theme="@style/AppTheme2" />
         <activity android:name=".daftarActivity" />
         <activity android:name=".daftar2Activity" />
-        <activity android:name=".sep2Activity" />
-        <activity android:name=".sep3Activity" />
-        <activity android:name=".sep4Activity" />
-        <activity android:name=".sep5Activity" />
-        <activity android:name=".sep6Activity" />
-        <activity android:name=".sep7Activity" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -47,11 +41,12 @@
         <activity
             android:name=".homeActivity"
             android:label="Beranda"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".homesebelumActivity"
             android:label="Beranda"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".tentangActivity"></activity>
     </application>
 
 </manifest>
