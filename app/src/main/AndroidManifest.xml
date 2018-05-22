@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.sep">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -26,8 +27,9 @@
         <activity android:name=".sep1Activity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".profilActivity" />
-        <activity android:name=".cetakActivity"
-            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".cetakActivity"
+            android:theme="@style/AppTheme2" />
         <activity android:name=".daftarActivity" />
         <activity android:name=".daftar2Activity" />
         <activity android:name=".sep2Activity" />
@@ -47,11 +49,12 @@
         <activity
             android:name=".homeActivity"
             android:label="Beranda"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".homesebelumActivity"
             android:label="Beranda"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".smsActivity"></activity>
     </application>
 
 </manifest>
