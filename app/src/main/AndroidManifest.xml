@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
     <application
         android:name=".app.App_Controller"
@@ -24,22 +26,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".loginActivity" />
-        <activity android:name=".profilActivity" />
+        <activity android:name=".loginActivity"
+            android:theme="@style/AppTheme2"
+            android:label="Login" />
+        <activity android:name=".profilActivity"
+            android:theme="@style/AppTheme2"
+            android:label="Profil" />
         <activity
             android:name=".cetakActivity"
             android:theme="@style/AppTheme2"
             android:label="@string/cetak1" />
 
-        <activity android:name=".daftarActivity" />
-        <activity android:name=".daftar2Activity" />
+        <activity android:name=".daftarActivity"
+            android:theme="@style/AppTheme2"
+            android:label="Daftar" />
+        <activity android:name=".daftar2Activity"
+            android:theme="@style/AppTheme2"
+            android:label="Daftar" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".syaratketentuanActivity" />
-        <activity android:name=".berkasActivity" />
+        <activity android:name=".berkasActivity"
+              android:theme="@style/AppTheme2"
+              android:label="Status" />
         <activity android:name=".cetak2Activity"
             android:theme="@style/AppTheme2"
             android:label="@string/cetak2"    />
@@ -52,8 +63,12 @@
             android:label="Beranda"
             android:theme="@style/AppTheme" />
 
-        <activity android:name=".tentangActivity"></activity>
-
+        <activity android:name=".tentangActivity"
+          android:theme="@style/AppTheme2"
+          android:label="Tentang" />
+        <activity android:name=".syaratketentuanActivity"
+            android:theme="@style/AppTheme2"
+            android:label="Konfirmasi"/>
     </application>
 
 </manifest>

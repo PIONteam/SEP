@@ -120,19 +120,14 @@ public class daftarActivity extends AppCompatActivity {
                     // Check for error node in json
                     if (success == 1) {
 
+                        String no_telepon = editText6.getText().toString();
+
                         Intent sep = new Intent(getApplicationContext(),daftar2Activity.class);
+                        sep.putExtra("nohp", no_telepon);
                         startActivity(sep);
 
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
-
-                        editText3.setText("");
-                        editText4.setText("");
-                        editText5.setText("");
-                        editText6.setText("");
-                        editText7.setText("");
-                        editText8.setText("");
-                        editText9.setText("");
 
                     } else {
                         Toast.makeText(getApplicationContext(),
@@ -186,6 +181,7 @@ public class daftarActivity extends AppCompatActivity {
     private void hideDialog() {
         if (pDialog.isShowing())
             pDialog.dismiss();
+
     }
 
     @Override

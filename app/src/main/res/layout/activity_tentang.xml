@@ -10,28 +10,9 @@
         android:id="@+id/imageView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/background2"
+        android:background="@drawable/background"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:layout_marginBottom="452dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Tentang"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints,NewApi" />
 
 </android.support.constraint.ConstraintLayout>

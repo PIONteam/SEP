@@ -93,10 +93,6 @@ public class homeActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
             startActivity(intent);
         }
-        if (id == R.id.nav_berkas) {
-            Intent intent = new Intent(getApplicationContext(), berkasActivity.class );
-            startActivity(intent);
-        }
         if (id == R.id.nav_status) {
             Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
             startActivity(intent);

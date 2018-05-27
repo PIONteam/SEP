@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loginActivity"
-    android:background="@drawable/background2">
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/textView27"
@@ -137,24 +137,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.829"
         tools:ignore="OnClick" />
-
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="122dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Masuk"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
