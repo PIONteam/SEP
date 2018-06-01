@@ -113,12 +113,13 @@
                 tools:ignore="MissingConstraints" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spinner1"
                 android:layout_width="194dp"
                 android:layout_height="39dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
+                android:entries="@array/list1"
                 android:background="@drawable/border_style2"
                 android:drawSelectorOnTop="true"
                 android:textColor="@android:color/black"
@@ -129,26 +130,12 @@
                 tools:ignore="InvalidId,MissingConstraints" />
 
             <Spinner
-                android:id="@+id/spinner1"
-                android:layout_width="194dp"
-                android:layout_height="39dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/border_style2"
-                android:drawSelectorOnTop="true"
-                android:textColor="@android:color/black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.053"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner"
-                tools:ignore="InvalidId,MissingConstraints" />
-
-            <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="194dp"
                 android:layout_height="39dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
+                android:entries="@array/list2"
                 android:background="@drawable/border_style2"
                 android:drawSelectorOnTop="true"
                 android:textColor="@android:color/black"
@@ -162,17 +149,34 @@
                 android:id="@+id/spinner3"
                 android:layout_width="194dp"
                 android:layout_height="39dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border_style2"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/list3"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner2"
+                tools:ignore="InvalidId,MissingConstraints" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="194dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="4dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/border_style2"
                 android:drawSelectorOnTop="true"
+                android:entries="@array/list4"
                 android:textColor="@android:color/black"
                 app:layout_constraintBottom_toTopOf="@+id/radioGroup"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="InvalidId,MissingConstraints" />
 
@@ -184,7 +188,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.543"
+                app:layout_constraintHorizontal_bias="0.554"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -196,9 +200,9 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.543"
+                app:layout_constraintHorizontal_bias="0.554"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/spinner" />
+                app:layout_constraintTop_toTopOf="@+id/spinner1" />
 
             <ImageView
                 android:id="@+id/imageView11"
@@ -208,7 +212,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.541"
+                app:layout_constraintHorizontal_bias="0.552"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
@@ -216,23 +220,20 @@
                 android:id="@+id/imageView12"
                 android:layout_width="30dp"
                 android:layout_height="39dp"
-                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:src="@drawable/pnh"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.541"
+                app:layout_constraintHorizontal_bias="0.552"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView11"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
             <RadioGroup
                 android:id="@+id/radioGroup"
                 android:layout_width="224dp"
                 android:layout_height="84dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="372dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="364dp"
                 android:onClick="radiocheked"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -256,8 +257,8 @@
 
                 <RadioButton
                     android:id="@+id/radioButton4"
-                    android:layout_width="163dp"
-                    android:layout_height="32dp"
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginTop="8dp"

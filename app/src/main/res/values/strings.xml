@@ -2,13 +2,6 @@
 <resources>
     <string name="app_name">SEP</string>
     <string name="todo">TODO</string>
-    <string name="sep1">SEP1</string>
-    <string name="sep2">SEP2</string>
-    <string name="sep3">SEP3</string>
-    <string name="sep4">SEP4</string>
-    <string name="sep5">SEP5</string>
-    <string name="sep6">SEP6</string>
-    <string name="sep7">SEP7</string>
     <string name="cetak_semua_halaman">Cetak semua halaman</string>
     <string name="cetak_halaman">Cetak halaman :</string>
     <string name="siapkan">Siapkan</string>
@@ -22,6 +15,10 @@
     <string name="pilih_file_anda">Pilih file anda</string>
     <string name="pengaturan_file">Pengaturan file</string>
     <string name="warna">Warna</string>
+    <string name="Nama_Lengkap">Nama Lengkap</string>
+    <string name="Nama_pengguna">Nama Pengguna</string>
+    <string name="Alamat">Alamat</string>
+
     <string name="orientasi">Orientasi</string>
     <string name="ukuran_kertas">Ukuran kertas</string>
     <string name="staples">Staples</string>
@@ -33,4 +30,27 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string-array name="list1">
+        <item>Berwarna</item>
+        <item>Hitam putih</item>
+    </string-array>
+    <string-array name="list2">
+        <item>--Pilih orientasi--</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="list3">
+        <item>--Pilih kertas--</item>
+        <item>A4</item>
+        <item>F4</item>
+    </string-array>
+    <string-array name="list4">
+        <item>--Pilih layanan--</item>
+        <item>Staples saja</item>
+        <item>Jilid Mika</item>
+        <item>Jilid Jepang</item>
+        <item>Jilid Spiral</item>
+    </string-array>
+
+
 </resources>
