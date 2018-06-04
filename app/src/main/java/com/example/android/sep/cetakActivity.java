@@ -1,10 +1,12 @@
 package com.example.android.sep;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.SharedMemory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,7 +37,7 @@ import java.util.Map;
 import static com.example.android.sep.loginActivity.TAG_ID;
 import static com.example.android.sep.loginActivity.my_shared_preferences;
 
-public class cetakActivity extends AppCompatActivity {
+public class cetakActivity extends AppCompatActivity implements View.OnClickListener{
 private Button btnCetak;
 private Button button2;
 TextView textView, textView23;
@@ -44,6 +46,10 @@ private Spinner aaa, aaa1, aaa2, aaa3;
 ProgressDialog pDialog;
 RadioButton radioButton3, radioButton4;
 RadioGroup radioGroup;
+
+    ProgressDialog dialog;
+    private String selectedFilePath;
+    private static final int PICK_FILE_REQUEST = 1;
 
     int success;
     ConnectivityManager conMgr;
@@ -193,56 +199,94 @@ RadioGroup radioGroup;
         btnCetak=(Button)findViewById(R.id.btnCetak);
         button2 = (Button)findViewById(R.id.button2);
         textView = (TextView)findViewById(R.id.textView23);
+        button2.setOnClickListener((View.OnClickListener) this);
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v== button2){
+
+            //on attachment icon click
+            showFileChooser();
+        }
+        if(v== btnCetak){
+            final String Spinner1  = isiSpinner;
+            final String Spinner2 = isiSpinner1;
+            final String Spinner3 = isiSpinner2;
+            final String Spinner4 = isiSpinner3;
+            final String komentar = EditText02.getText().toString();
+            final String berkas = textView23.getText().toString();
+            final String radio = pilihradio();
+            final String salinan = EditText0.getText().toString();
+            final String id_pengguna = String.valueOf(id_pengguna1).toString();
+
+            //String nama_berkas= textView23.getText().toString();
+            if (conMgr.getActiveNetworkInfo() != null
+                    && conMgr.getActiveNetworkInfo().isAvailable()
+                    && conMgr.getActiveNetworkInfo().isConnected()) {
+                check(Spinner1, Spinner2, Spinner3, Spinner4, komentar, berkas, radio, salinan,id_pengguna);
             }
-        });
 
-        btnCetak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
+            //filepath
+            if(selectedFilePath != null){
+                dialog = ProgressDialog.show(cetakActivity.this,"","Uploading File...",true);
+            }else{
+                Toast.makeText(cetakActivity.this,"Please choose a File First",Toast.LENGTH_SHORT).show();
+            }
 
-                final String Spinner1  = isiSpinner;
-                final String Spinner2 = isiSpinner1;
-                final String Spinner3 = isiSpinner2;
-                final String Spinner4 = isiSpinner3;
-                final String komentar = EditText02.getText().toString();
-                final String berkas = textView23.getText().toString();
-                final String radio = pilihradio();
-                final String salinan = EditText0.getText().toString();
-                final String id_pengguna = String.valueOf(id_pengguna1).toString();
+            Bundle bundle = new Bundle();
+            bundle.putString("parse_warna", String.valueOf(warna1).toString());
+            bundle.putString("parse_orientasi", String.valueOf(orientasi1).toString());
+            bundle.putString("parse_kertas", String.valueOf(kertas1).toString());
+            bundle.putString("parse_layanan", String.valueOf(layanan1).toString());
+            bundle.putString("parse_radio", pilihradio());
+            bundle.putString("parse_salinan", EditText0.getText().toString());
+            bundle.putString("parse_komentar", EditText02.getText().toString());
 
-                //String nama_berkas= textView23.getText().toString();
-                if (conMgr.getActiveNetworkInfo() != null
-                        && conMgr.getActiveNetworkInfo().isAvailable()
-                        && conMgr.getActiveNetworkInfo().isConnected()) {
-                    check(Spinner1, Spinner2, Spinner3, Spinner4, komentar, berkas, radio, salinan,id_pengguna);
-                } else {
-                    Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
+            intent.putExtras(bundle);
+            startActivity(intent);
+
+        }
+    }
+
+
+
+    //file chooser
+    private void showFileChooser() {
+        Intent intent = new Intent();
+        //sets the select file to all types of files
+        intent.setType("*/*");
+        //allows to select data and return it
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        //starts new activity to select file and return data
+        startActivityForResult(Intent.createChooser(intent,"Choose File to Upload.."),PICK_FILE_REQUEST);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == PICK_FILE_REQUEST) {
+                if (data == null) {
+                    //no data present
+                    return;
                 }
 
-               Bundle bundle = new Bundle();
-                bundle.putString("parse_warna", String.valueOf(warna1).toString());
-                bundle.putString("parse_orientasi", String.valueOf(orientasi1).toString());
-                bundle.putString("parse_kertas", String.valueOf(kertas1).toString());
-                bundle.putString("parse_layanan", String.valueOf(layanan1).toString());
-                bundle.putString("parse_radio", pilihradio());
-                bundle.putString("parse_salinan", EditText0.getText().toString());
-                bundle.putString("parse_komentar", EditText02.getText().toString());
 
-                Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
-                intent.putExtras(bundle);
-                startActivity(intent);
+                Uri selectedFileUri = data.getData();
+                selectedFilePath = FilePath.getPath(this, selectedFileUri);
+                Log.i(TAG, "Selected File Path:" + selectedFilePath);
 
+                if (selectedFilePath != null && !selectedFilePath.equals("")) {
+                    textView.setText(selectedFilePath);
+                } else {
+                    Toast.makeText(this, "Cannot upload file to server", Toast.LENGTH_SHORT).show();
+                }
             }
-
-      });
-
-  }
-
+        }
+    }
     private void check(final String Spinner1, final String Spinner2, final String Spinner3, final String Spinner4, final String komentar, final String berkas, final String radio, final String salinan, final String id_pengguna) {
 
         StringRequest strReq = new StringRequest(Request.Method.POST,url, new Response.Listener<String>() {
@@ -310,93 +354,5 @@ RadioGroup radioGroup;
         }
         return radio;
     }
-    /*
-    public void uploadMultipart() {
-        //getting name for the image
-        String nama_berkas = textView23.getText().toString().trim();
 
-        //getting the actual path of the image
-        String path = FilePath.getPath(this, filePath);
-
-        if (path == null) {
-
-            Toast.makeText(this, "Please move your .pdf file to internal storage and retry", Toast.LENGTH_LONG).show();
-        } else {
-            //Uploading code
-            try {
-                String uploadId = UUID.randomUUID().toString();
-
-                //Creating a multi part request
-                new MultipartUploadRequest(this, uploadId, UPLOAD_URL)
-                        .addFileToUpload(path, "pdf") //Adding file
-                        .addParameter("nama_berkas", nama_berkas) //Adding text parameter to the request
-                        .setNotificationConfig(new UploadNotificationConfig())
-                        .setMaxRetries(2)
-                        .startUpload(); //Starting the upload
-
-            } catch (Exception exc) {
-                Toast.makeText(this, exc.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == PICK_PDF_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            filePath = data.getData();
-        }
-    }
-
-
-    //Requesting permission
-    private void requestStoragePermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED)
-            return;
-
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE)) {
-            //If the user has denied the permission previously your code will come to this block
-            //Here you can explain why you need this permission
-            //Explain here why you need this permission
-        }
-        //And finally ask for the permission
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
-    }
-
-
-    //This method will be called when the user will tap on allow or deny
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-
-        //Checking the request code of our request
-        if (requestCode == STORAGE_PERMISSION_CODE) {
-
-            //If permission is granted
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                //Displaying a toast
-                Toast.makeText(this, "Permission granted now you can read the storage", Toast.LENGTH_LONG).show();
-            } else {
-                //Displaying another toast if permission is not granted
-                Toast.makeText(this, "Oops you just denied the permission", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
-    public void onClick(View v) {
-        if (v == button2) {
-            showFileChooser();
-        }
-        if (v == btnCetak) {
-            uploadMultipart();
-        }
-    }
-
-    //method to show file chooser
-    private void showFileChooser() {
-        Intent intent = new Intent();
-        intent.setType("application/pdf");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Pdf"), PICK_PDF_REQUEST);
-    }
-*/
 }
