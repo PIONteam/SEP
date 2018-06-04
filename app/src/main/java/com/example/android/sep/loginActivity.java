@@ -46,17 +46,25 @@ public class loginActivity extends AppCompatActivity {
 
     public final static String TAG_NAMA_PENGGUNA = "nama_pengguna";
     public final static String TAG_KATA_SANDI = "kata_sandi";
+<<<<<<< HEAD
     public final static String TAG_ID_PENGGUNA = "id_pengguna";
     public final static String TAG_ALAMAT = "alamat";
     public final static String TAG_NO_TLP = "no_tlp";
     public final static String TAG_EMAIL = "email";
     public final static String TAG_NAMA_LENGKAP = "nama_lengkap";
 
+=======
+    public final static String TAG_ID = "id_pengguna";
+>>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
     String tag_json_obj = "json_obj_req";
 
     SharedPreferences sharedpreferences;
     Boolean session = false;
+<<<<<<< HEAD
     String kata_sandi, nama_pengguna, nama_lengkap, id_pengguna, email, alamat, no_tlp;
+=======
+    String id_pengguna, kata_sandi, nama_pengguna;
+>>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
     public static final String my_shared_preferences = "my_shared_preferences";
     public static final String session_status = "session_status";
 
@@ -83,16 +91,21 @@ public class loginActivity extends AppCompatActivity {
         session = sharedpreferences.getBoolean(session_status, false);
         kata_sandi = sharedpreferences.getString(TAG_KATA_SANDI, null);
         nama_pengguna = sharedpreferences.getString(TAG_NAMA_PENGGUNA, null);
+<<<<<<< HEAD
         id_pengguna = sharedpreferences.getString(TAG_ID_PENGGUNA, null);
         alamat = sharedpreferences.getString(TAG_ALAMAT, null);
         no_tlp = sharedpreferences.getString(TAG_NO_TLP, null);
         nama_lengkap = sharedpreferences.getString(TAG_NAMA_LENGKAP, null);
 
+=======
+        id_pengguna = sharedpreferences.getString(TAG_ID,null);
+>>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
 
         if (session) {
             Intent intent = new Intent(loginActivity.this, homeActivity.class);
             intent.putExtra(TAG_KATA_SANDI, kata_sandi);
             intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
+            intent.putExtra(TAG_ID, id_pengguna);
             startActivity(intent);
             finish();
         }
@@ -151,6 +164,7 @@ public class loginActivity extends AppCompatActivity {
                     if (success == 1) {
                         String nama_pengguna = jObj.getString(TAG_NAMA_PENGGUNA);
                         String kata_sandi = jObj.getString(TAG_KATA_SANDI);
+<<<<<<< HEAD
                         String id_pennguna = jObj.getString(TAG_ID_PENGGUNA);
                         String alamat = jObj.getString(TAG_ALAMAT);
                         String no_tlp = jObj.getString(TAG_NO_TLP);
@@ -158,6 +172,10 @@ public class loginActivity extends AppCompatActivity {
                         String nama_lengkap = jObj.getString(TAG_NAMA_LENGKAP);
 
 
+=======
+                        String id_pengguna = jObj.getString(TAG_ID);
+                        Toast.makeText(getApplicationContext(), id_pengguna, Toast.LENGTH_SHORT).show();
+>>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
                         Log.e("Successfully Login!", jObj.toString());
 
                         Toast.makeText(getApplicationContext(), jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
@@ -165,6 +183,7 @@ public class loginActivity extends AppCompatActivity {
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
+                        editor.putString(TAG_ID, id_pengguna);
                         editor.putString(TAG_KATA_SANDI, kata_sandi);
                         editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
                         editor.putString(TAG_ID_PENGGUNA, id_pennguna);
