@@ -46,12 +46,17 @@ public class loginActivity extends AppCompatActivity {
 
     public final static String TAG_NAMA_PENGGUNA = "nama_pengguna";
     public final static String TAG_KATA_SANDI = "kata_sandi";
+    public final static String TAG_ID_PENGGUNA = "id_pengguna";
+    public final static String TAG_ALAMAT = "alamat";
+    public final static String TAG_NO_TLP = "no_tlp";
+    public final static String TAG_EMAIL = "email";
+    public final static String TAG_NAMA_LENGKAP = "nama_lengkap";
 
     String tag_json_obj = "json_obj_req";
 
     SharedPreferences sharedpreferences;
     Boolean session = false;
-    String kata_sandi, nama_pengguna;
+    String kata_sandi, nama_pengguna, nama_lengkap, id_pengguna, email, alamat, no_tlp;
     public static final String my_shared_preferences = "my_shared_preferences";
     public static final String session_status = "session_status";
 
@@ -78,6 +83,11 @@ public class loginActivity extends AppCompatActivity {
         session = sharedpreferences.getBoolean(session_status, false);
         kata_sandi = sharedpreferences.getString(TAG_KATA_SANDI, null);
         nama_pengguna = sharedpreferences.getString(TAG_NAMA_PENGGUNA, null);
+        id_pengguna = sharedpreferences.getString(TAG_ID_PENGGUNA, null);
+        alamat = sharedpreferences.getString(TAG_ALAMAT, null);
+        no_tlp = sharedpreferences.getString(TAG_NO_TLP, null);
+        nama_lengkap = sharedpreferences.getString(TAG_NAMA_LENGKAP, null);
+
 
         if (session) {
             Intent intent = new Intent(loginActivity.this, homeActivity.class);
@@ -113,7 +123,7 @@ public class loginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent sep = new Intent(loginActivity.this, daftarActivity.class);
+                Intent sep = new Intent(loginActivity.this, daftar2Activity.class);
                 startActivity(sep);
                 finish();
             }
@@ -139,8 +149,14 @@ public class loginActivity extends AppCompatActivity {
 
                     // Check for error node in json
                     if (success == 1) {
-                        String nama_pengguna= jObj.getString(TAG_NAMA_PENGGUNA);
+                        String nama_pengguna = jObj.getString(TAG_NAMA_PENGGUNA);
                         String kata_sandi = jObj.getString(TAG_KATA_SANDI);
+                        String id_pennguna = jObj.getString(TAG_ID_PENGGUNA);
+                        String alamat = jObj.getString(TAG_ALAMAT);
+                        String no_tlp = jObj.getString(TAG_NO_TLP);
+                        String email = jObj.getString(TAG_EMAIL);
+                        String nama_lengkap = jObj.getString(TAG_NAMA_LENGKAP);
+
 
                         Log.e("Successfully Login!", jObj.toString());
 
@@ -151,6 +167,14 @@ public class loginActivity extends AppCompatActivity {
                         editor.putBoolean(session_status, true);
                         editor.putString(TAG_KATA_SANDI, kata_sandi);
                         editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
+                        editor.putString(TAG_ID_PENGGUNA, id_pennguna);
+                        editor.putString(TAG_ALAMAT, alamat);
+                        editor.putString(TAG_EMAIL, email);
+                        editor.putString(TAG_NO_TLP, no_tlp);
+                        editor.putString(TAG_NAMA_LENGKAP, nama_lengkap);
+
+
+
                         editor.commit();
 
                         // Memanggil main activity
