@@ -43,7 +43,6 @@ private Button button2;
 TextView textView, textView23;
 EditText EditText02, EditText03, EditText0;
 private Spinner aaa, aaa1, aaa2, aaa3;
-ProgressDialog pDialog;
 RadioButton radioButton3, radioButton4;
 RadioGroup radioGroup;
 
@@ -59,34 +58,18 @@ RadioGroup radioGroup;
     public int layanan;
     String radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
     String warna1, kertas1, orientasi1, cetak1, layanan1;
-    SharedPreferences sharedpreferences;
 
-    private String url = Server.URL + "cetak.php";
-
-    private static final String TAG = daftarActivity.class.getSimpleName();
-
-    private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
-
+    private static final String TAG_SUCCESS = "success";
+    private String url = Server.URL + "cetak.php";
+    private static final String TAG = daftarActivity.class.getSimpleName();
 
     String tag_json_obj = "json_obj_req";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cetak);
-        sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
-        id_pengguna1 = sharedpreferences.getString(TAG_ID, null);
 
-        conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        {
-            if (conMgr.getActiveNetworkInfo() != null
-                    && conMgr.getActiveNetworkInfo().isAvailable()
-                    && conMgr.getActiveNetworkInfo().isConnected()) {
-            } else {
-                Toast.makeText(getApplicationContext(), "No Internet Connection",
-                        Toast.LENGTH_LONG).show();
-            }
-        }
        // requestStoragePermission();
 
         aaa = (Spinner) findViewById(R.id.spinner1);
@@ -101,7 +84,13 @@ RadioGroup radioGroup;
         EditText03=(EditText)findViewById(R.id.EditText03);
         radioGroup =(RadioGroup)findViewById(R.id.radioGroup);
 
-       final String[] list1=getResources().getStringArray(R.array.list1);
+        int selected = radioGroup.getCheckedRadioButtonId();
+        if (selected == radioButton3.getId()){
+            EditText03.setEnabled(false);
+        }
+
+
+        final String[] list1=getResources().getStringArray(R.array.list1);
        final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,R.layout.item_spin,R.id.txItemSpin,list1);
        aaa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
            @Override
@@ -244,12 +233,14 @@ RadioGroup radioGroup;
             bundle.putString("parse_salinan", EditText0.getText().toString());
             bundle.putString("parse_komentar", EditText02.getText().toString());
 
+
             Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
             intent.putExtras(bundle);
             startActivity(intent);
 
         }
     }
+
 
 
 
@@ -341,12 +332,14 @@ RadioGroup radioGroup;
         // Adding request to request queue
         App_Controller.getInstance().addToRequestQueue(strReq, tag_json_obj);
     }
+
     public String pilihradio(){
 
         int selectedId = radioGroup.getCheckedRadioButtonId();
 
         if (selectedId == radioButton3.getId()){
             radio = radioButton3.getText().toString();
+
         }
         else if (selectedId == radioButton4.getId()){
             radio = "Cetak Halaman "+EditText03.getText().toString();
@@ -354,5 +347,6 @@ RadioGroup radioGroup;
         }
         return radio;
     }
+
 
 }

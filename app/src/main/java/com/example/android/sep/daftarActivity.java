@@ -98,7 +98,7 @@ public class daftarActivity extends AppCompatActivity {
             }
         });
 
-    }
+}
 
     private void checkRegister(final String nama_lengkap,final String nama_pengguna,final String email,final String no_telepon,final String alamat,final String kata_sandi,final String konfirmasi_kata_sandi) {
         pDialog = new ProgressDialog(this);
