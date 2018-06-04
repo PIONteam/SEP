@@ -46,12 +46,12 @@ public class loginActivity extends AppCompatActivity {
 
     public final static String TAG_NAMA_PENGGUNA = "nama_pengguna";
     public final static String TAG_KATA_SANDI = "kata_sandi";
-
+    public final static String TAG_ID = "id_pengguna";
     String tag_json_obj = "json_obj_req";
 
     SharedPreferences sharedpreferences;
     Boolean session = false;
-    String kata_sandi, nama_pengguna;
+    String id_pengguna, kata_sandi, nama_pengguna;
     public static final String my_shared_preferences = "my_shared_preferences";
     public static final String session_status = "session_status";
 
@@ -78,11 +78,13 @@ public class loginActivity extends AppCompatActivity {
         session = sharedpreferences.getBoolean(session_status, false);
         kata_sandi = sharedpreferences.getString(TAG_KATA_SANDI, null);
         nama_pengguna = sharedpreferences.getString(TAG_NAMA_PENGGUNA, null);
+        id_pengguna = sharedpreferences.getString(TAG_ID,null);
 
         if (session) {
             Intent intent = new Intent(loginActivity.this, homeActivity.class);
             intent.putExtra(TAG_KATA_SANDI, kata_sandi);
             intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
+            intent.putExtra(TAG_ID, id_pengguna);
             startActivity(intent);
             finish();
         }
@@ -141,7 +143,8 @@ public class loginActivity extends AppCompatActivity {
                     if (success == 1) {
                         String nama_pengguna= jObj.getString(TAG_NAMA_PENGGUNA);
                         String kata_sandi = jObj.getString(TAG_KATA_SANDI);
-
+                        String id_pengguna = jObj.getString(TAG_ID);
+                        Toast.makeText(getApplicationContext(), id_pengguna, Toast.LENGTH_SHORT).show();
                         Log.e("Successfully Login!", jObj.toString());
 
                         Toast.makeText(getApplicationContext(), jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
@@ -149,6 +152,7 @@ public class loginActivity extends AppCompatActivity {
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
+                        editor.putString(TAG_ID, id_pengguna);
                         editor.putString(TAG_KATA_SANDI, kata_sandi);
                         editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
                         editor.commit();

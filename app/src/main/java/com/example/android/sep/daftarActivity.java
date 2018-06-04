@@ -120,10 +120,7 @@ public class daftarActivity extends AppCompatActivity {
                     // Check for error node in json
                     if (success == 1) {
 
-                        String no_telepon = editText6.getText().toString();
-
-                        Intent sep = new Intent(getApplicationContext(),daftar2Activity.class);
-                        sep.putExtra("nohp", no_telepon);
+                        Intent sep = new Intent(getApplicationContext(),loginActivity.class);
                         startActivity(sep);
 
                         Toast.makeText(getApplicationContext(),
