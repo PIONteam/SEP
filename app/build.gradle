@@ -26,7 +26,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-<<<<<<< HEAD
+
     implementation 'com.google.firebase:firebase-core:16.0.0'
     implementation 'com.google.firebase:firebase-auth:15.1.0'
     testImplementation 'junit:junit:4.12'
@@ -37,7 +37,7 @@ dependencies {
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'com.android.volley:volley:1.0.0'
-=======
+
     testImplementation 'junit:junit:4.12'
     compile 'net.gotev:uploadservice:2.1'
     compile 'com.squareup.picasso:picasso:2.3.2'
@@ -47,7 +47,7 @@ dependencies {
     compile 'com.android.support:support-v4:27.1.1'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.android.volley:volley:1.0.0'
->>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
+
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.support:design:27.1.1'

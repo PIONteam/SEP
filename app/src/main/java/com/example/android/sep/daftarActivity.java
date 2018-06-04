@@ -120,10 +120,7 @@ public class daftarActivity extends AppCompatActivity {
                     // Check for error node in json
                     if (success == 1) {
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
                         Intent sep = new Intent(getApplicationContext(),loginActivity.class);
                         startActivity(sep);
 

@@ -16,7 +16,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-<<<<<<< HEAD
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseException;
+import com.google.firebase.FirebaseTooManyRequestsException;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthProvider;
+
+import java.util.concurrent.TimeUnit;
+
 public class daftar2Activity extends AppCompatActivity implements
         View.OnClickListener{
     private static final String TAG = "PhoneAuthActivity";
@@ -67,11 +79,6 @@ public class daftar2Activity extends AppCompatActivity implements
 
 
 
-
-
-=======
-public class daftar2Activity extends AppCompatActivity  {
->>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -428,5 +435,7 @@ public class daftar2Activity extends AppCompatActivity  {
                 break;
 
         }
+
+
     }
 }

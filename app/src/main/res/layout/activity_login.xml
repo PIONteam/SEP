@@ -55,18 +55,9 @@
         android:ems="10"
         android:hint="Nama Pengguna"
         android:inputType="textPersonName"
-<<<<<<< HEAD
         android:textColor="@android:color/black"
-        android:textColorHint="@android:color/darker_gray"
-=======
-        android:textColor="@android:color/white"
->>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386" />
+        android:textColorHint="@android:color/darker_gray"/>
+
 
     <EditText
         android:id="@+id/editText4"
@@ -80,18 +71,8 @@
         android:ems="10"
         android:hint="Kata Sandi"
         android:inputType="textPassword"
-<<<<<<< HEAD
         android:textColor="@android:color/black"
-        android:textColorHint="@android:color/darker_gray"
-=======
-        android:textColor="@android:color/white"
->>>>>>> 5d6f4c02c4f530f2067258fd14a8324125b741ed
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+        android:textColorHint="@android:color/darker_gray"/>
 
     <Button
         android:id="@+id/button6"
