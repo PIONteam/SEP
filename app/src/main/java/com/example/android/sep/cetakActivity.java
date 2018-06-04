@@ -52,6 +52,7 @@ RadioGroup radioGroup;
     public int kertas;
     public int layanan;
     String radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
+    String warna1, kertas1, orientasi1, cetak1, layanan1;
     SharedPreferences sharedpreferences;
 
     private String url = Server.URL + "cetak.php";
@@ -108,6 +109,8 @@ RadioGroup radioGroup;
                }
                Toast.makeText(getApplicationContext(), "Selected "+ warna,Toast.LENGTH_SHORT).show();
                isiSpinner =String.valueOf(warna).toString();
+               warna1= String.valueOf(adapter.getItem(position));
+
            }
            @Override
            public void onNothingSelected(AdapterView<?> parent) {
@@ -127,6 +130,7 @@ RadioGroup radioGroup;
                 }
                 Toast.makeText(getApplicationContext(), "Selected "+ orientasi,Toast.LENGTH_SHORT).show();
                 isiSpinner1 =String.valueOf(orientasi).toString();
+                orientasi1= String.valueOf(adapter1.getItem(position));
             }
 
             @Override
@@ -148,6 +152,7 @@ RadioGroup radioGroup;
                 }
                 Toast.makeText(getApplicationContext(), "Selected "+ kertas,Toast.LENGTH_SHORT).show();
                 isiSpinner2 =String.valueOf(kertas).toString();
+                kertas1= String.valueOf(adapter2.getItem(position));
             }
 
 
@@ -176,6 +181,7 @@ RadioGroup radioGroup;
                 }
                 Toast.makeText(getApplicationContext(), "Selected "+ layanan,Toast.LENGTH_SHORT).show();
                 isiSpinner3 = String.valueOf(layanan).toString();
+                layanan1= String.valueOf(adapter3.getItem(position));
             }
 
             @Override
@@ -203,7 +209,6 @@ RadioGroup radioGroup;
                 final String Spinner2 = isiSpinner1;
                 final String Spinner3 = isiSpinner2;
                 final String Spinner4 = isiSpinner3;
-                Toast.makeText(getApplicationContext(),"spiner3"+Spinner4,Toast.LENGTH_LONG).show();
                 final String komentar = EditText02.getText().toString();
                 final String berkas = textView23.getText().toString();
                 final String radio = pilihradio();
@@ -218,7 +223,21 @@ RadioGroup radioGroup;
                 } else {
                     Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                 }
-         }
+
+               Bundle bundle = new Bundle();
+                bundle.putString("parse_warna", String.valueOf(warna1).toString());
+                bundle.putString("parse_orientasi", String.valueOf(orientasi1).toString());
+                bundle.putString("parse_kertas", String.valueOf(kertas1).toString());
+                bundle.putString("parse_layanan", String.valueOf(layanan1).toString());
+                bundle.putString("parse_radio", pilihradio());
+                bundle.putString("parse_salinan", EditText0.getText().toString());
+                bundle.putString("parse_komentar", EditText02.getText().toString());
+
+                Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+            }
 
       });
 
