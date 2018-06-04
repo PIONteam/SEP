@@ -94,7 +94,7 @@ public class homeActivity extends AppCompatActivity
             startActivity(intent);
         }
         if (id == R.id.nav_status) {
-            Intent intent = new Intent(getApplicationContext(), cetakActivity.class );
+            Intent intent = new Intent(getApplicationContext(), berkasActivity.class );
             startActivity(intent);
         }
         if (id == R.id.nav_tentang) {

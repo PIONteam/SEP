@@ -152,4 +152,8 @@ public class FilePath
     public static boolean isGooglePhotosUri(Uri uri) {
         return "com.google.android.apps.photos.content".equals(uri.getAuthority());
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2c963909d66e1d73e9ed3332c8d1515bf12fa57c
