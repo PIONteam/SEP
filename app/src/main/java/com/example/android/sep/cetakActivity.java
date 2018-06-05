@@ -1,14 +1,20 @@
 package com.example.android.sep;
 
+<<<<<<< HEAD
+=======
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+>>>>>>> 9213849d99f635bd6b12e2a500cf4d5951adff12
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
+<<<<<<< HEAD
+=======
+import android.net.Uri;
 import android.os.SharedMemory;
+>>>>>>> 9213849d99f635bd6b12e2a500cf4d5951adff12
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,22 +26,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.example.android.sep.app.App_Controller;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import static com.example.android.sep.loginActivity.TAG_ID;
-import static com.example.android.sep.loginActivity.my_shared_preferences;
-
-public class cetakActivity extends AppCompatActivity {
+public class cetakActivity extends AppCompatActivity implements View.OnClickListener{
 private Button btnCetak;
 private Button button2;
 TextView textView, textView23;
@@ -43,6 +35,10 @@ EditText EditText02, EditText03, EditText0;
 private Spinner aaa, aaa1, aaa2, aaa3;
 RadioButton radioButton3, radioButton4;
 RadioGroup radioGroup;
+
+    ProgressDialog dialog;
+    private String selectedFilePath;
+    private static final int PICK_FILE_REQUEST = 1;
 
     int success;
     ConnectivityManager conMgr;
@@ -54,8 +50,10 @@ RadioGroup radioGroup;
     String warna1, kertas1, orientasi1, cetak1, layanan1;
 
 
+    private static final String TAG_MESSAGE = "message";
+    private static final String TAG = daftarActivity.class.getSimpleName();
 
-    String tag_json_obj = "json_obj_req";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -179,36 +177,80 @@ RadioGroup radioGroup;
         btnCetak=(Button)findViewById(R.id.btnCetak);
         button2 = (Button)findViewById(R.id.button2);
         textView = (TextView)findViewById(R.id.textView23);
+        button2.setOnClickListener((View.OnClickListener) this);
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
+    }
 
-        btnCetak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
+    @Override
+    public void onClick(View v) {
+        if(v== button2){
 
-               Bundle bundle = new Bundle();
-                bundle.putString("parse_warna", String.valueOf(warna1).toString());
-                bundle.putString("parse_orientasi", String.valueOf(orientasi1).toString());
-                bundle.putString("parse_kertas", String.valueOf(kertas1).toString());
-                bundle.putString("parse_layanan", String.valueOf(layanan1).toString());
-                bundle.putString("parse_radio", pilihradio());
-                bundle.putString("parse_salinan", EditText0.getText().toString());
-                bundle.putString("parse_komentar", EditText02.getText().toString());
+            //on attachment icon click
+            showFileChooser();
+        }
+        if(v== btnCetak){
 
-                Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
-                intent.putExtras(bundle);
-                startActivity(intent);
-
+            //filepath
+            if(selectedFilePath != null){
+                dialog = ProgressDialog.show(cetakActivity.this,"","Uploading File...",true);
+            }else{
+                Toast.makeText(cetakActivity.this,"Please choose a File First",Toast.LENGTH_SHORT).show();
             }
 
-      });
+            Bundle bundle = new Bundle();
+            bundle.putString("parse_warna", String.valueOf(warna1).toString());
+            bundle.putString("parse_orientasi", String.valueOf(orientasi1).toString());
+            bundle.putString("parse_kertas", String.valueOf(kertas1).toString());
+            bundle.putString("parse_layanan", String.valueOf(layanan1).toString());
+            bundle.putString("parse_radio", pilihradio());
+            bundle.putString("parse_salinan", EditText0.getText().toString());
+            bundle.putString("parse_komentar", EditText02.getText().toString());
 
-  }
+
+            Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
+            intent.putExtras(bundle);
+            startActivity(intent);
+
+        }
+    }
+
+
+    //file chooser
+    private void showFileChooser() {
+        Intent intent = new Intent();
+        //sets the select file to all types of files
+        intent.setType("*/*");
+        //allows to select data and return it
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        //starts new activity to select file and return data
+        startActivityForResult(Intent.createChooser(intent,"Choose File to Upload.."),PICK_FILE_REQUEST);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == PICK_FILE_REQUEST) {
+                if (data == null) {
+                    //no data present
+                    return;
+                }
+
+
+                Uri selectedFileUri = data.getData();
+                selectedFilePath = FilePath.getPath(this, selectedFileUri);
+                Log.i(TAG, "Selected File Path:" + selectedFilePath);
+
+                if (selectedFilePath != null && !selectedFilePath.equals("")) {
+                    textView.setText(selectedFilePath);
+                } else {
+                    Toast.makeText(this, "Cannot upload file to server", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+    }
+
+
     public String pilihradio(){
 
         int selectedId = radioGroup.getCheckedRadioButtonId();
