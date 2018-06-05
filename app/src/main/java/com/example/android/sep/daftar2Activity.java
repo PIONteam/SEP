@@ -256,7 +256,7 @@ public class daftar2Activity extends AppCompatActivity implements
     private void resendVerificationCode(String phoneNumber,
                                         PhoneAuthProvider.ForceResendingToken token) {
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                phoneNumber,        // Phone number to verify
+                "+62" + phoneNumber,        // Phone number to verify
                 60,                 // Timeout duration
                 TimeUnit.SECONDS,   // Unit of timeout
                 this,               // Activity (for callback binding)
@@ -334,6 +334,7 @@ public class daftar2Activity extends AppCompatActivity implements
             case STATE_CODE_SENT:
                 // Code sent state, show the verification field, the
                 enableViews(mVerifyButton, mResendButton, mPhoneNumberField, mVerificationField);
+                disableViews(mStartButton);
 
                 break;
             case STATE_VERIFY_FAILED:
@@ -356,6 +357,9 @@ public class daftar2Activity extends AppCompatActivity implements
                         mVerificationField.setText(R.string.instant_validation);
                     }
                 }
+                Intent intent = new Intent (getApplicationContext(), daftarActivity.class);
+                intent.putExtra("no telepon", mPhoneNumberField.getText().toString());
+                startActivity(intent);
 
                 break;
             case STATE_SIGNIN_FAILED:
@@ -376,7 +380,8 @@ public class daftar2Activity extends AppCompatActivity implements
             mVerificationField.setText(null);
 
 
-        }else if (uiState == STATE_VERIFY_SUCCESS){
+        }else if (uiState == STATE_VERIFY_SUCCESS || uiState == STATE_SIGNIN_SUCCESS){
+            updateUI(STATE_INITIALIZED);
             Intent intent = new Intent (getApplicationContext(), daftarActivity.class);
             intent.putExtra("no telepon", mPhoneNumberField.getText().toString());
             startActivity(intent);

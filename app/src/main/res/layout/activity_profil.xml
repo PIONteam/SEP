@@ -40,7 +40,7 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="180dp"
-                    android:layout_height="94dp"
+                    android:layout_height="147dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
@@ -49,7 +49,7 @@
                     app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/logo" />
+                    app:srcCompat="@drawable/logo_sep" />
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
@@ -228,7 +228,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:background="#33b1ff"
+                    android:background="@android:color/holo_blue_dark"
                     android:text="edit"
                     android:textSize="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -277,7 +277,7 @@
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="180dp"
-                        android:layout_height="94dp"
+                        android:layout_height="147dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
@@ -286,7 +286,7 @@
                         app:layout_constraintHorizontal_bias="0.502"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/logo" />
+                        app:srcCompat="@drawable/logo_sep" />
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>
 
@@ -460,7 +460,7 @@
                     <Button
                         android:id="@+id/buttonBatal"
                         android:layout_width="81dp"
-                        android:layout_height="46dp"
+                        android:layout_height="40dp"
                         android:layout_marginBottom="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginStart="8dp"
@@ -479,7 +479,7 @@
                     <Button
                         android:id="@+id/buttonSimpan"
                         android:layout_width="75dp"
-                        android:layout_height="43dp"
+                        android:layout_height="40dp"
                         android:layout_marginBottom="8dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginTop="8dp"

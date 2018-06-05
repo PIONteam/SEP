@@ -21,6 +21,7 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 import static com.example.android.sep.loginActivity.TAG_KATA_SANDI;
@@ -117,6 +118,8 @@ public class homeActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+
+
     }
 }
 

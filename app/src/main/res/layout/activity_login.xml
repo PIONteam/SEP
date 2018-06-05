@@ -46,28 +46,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:orientation="horizontal">
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="63dp">
 
                     <View
                         android:id="@+id/view"
-                        android:layout_width="200dp"
+                        android:layout_width="247dp"
                         android:layout_height="6dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginStart="80dp"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:background="#ffbb33"
-                        app:layout_constraintBottom_toTopOf="@+id/editText3"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintHorizontal_bias="0.505"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.043"
+                        app:layout_constraintVertical_bias="0.195"
                         tools:ignore="MissingConstraints" />
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>
@@ -114,6 +114,7 @@
                         android:id="@+id/editText4"
                         android:layout_width="246dp"
                         android:layout_height="51dp"
+                        android:layout_marginBottom="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
@@ -124,9 +125,11 @@
                         android:textColor="@android:color/black"
                         android:textColorHint="@android:color/darker_gray"
                         android:textSize="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>
 
@@ -150,12 +153,11 @@
                         android:background="@android:color/holo_green_light"
                         android:text="Masuk"
                         android:textSize="16dp"
-                        app:layout_constraintBottom_toTopOf="@+id/textView32"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintHorizontal_bias="0.501"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText4"
-                        app:layout_constraintVertical_bias="1.0" />
+                        app:layout_constraintTop_toTopOf="parent" />
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>
 
