@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.example.android.sep.daftarActivity">
-<<<<<<< HEAD
-
-=======
->>>>>>> 9c49bbdcf29e6d1f9e6ef997455b727c3b1e380b
 
     <ScrollView
         android:layout_width="match_parent"
@@ -220,7 +216,6 @@
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
-<<<<<<< HEAD
 
     <TextView
         android:id="@+id/textView31"
@@ -229,13 +224,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
 
-
-
-
-
-
-=======
->>>>>>> 9c49bbdcf29e6d1f9e6ef997455b727c3b1e380b
 
 
 </android.support.constraint.ConstraintLayout>

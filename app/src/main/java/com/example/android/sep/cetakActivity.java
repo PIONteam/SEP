@@ -1,20 +1,16 @@
 package com.example.android.sep;
 
-<<<<<<< HEAD
-=======
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
->>>>>>> 9213849d99f635bd6b12e2a500cf4d5951adff12
 import android.content.Intent;
 import android.net.ConnectivityManager;
-<<<<<<< HEAD
-=======
+
 import android.net.Uri;
 import android.os.SharedMemory;
->>>>>>> 9213849d99f635bd6b12e2a500cf4d5951adff12
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -47,7 +43,7 @@ RadioGroup radioGroup;
     public int kertas;
     public int layanan;
     String radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
-    String warna1, kertas1, orientasi1, cetak1, layanan1;
+    String file, warna1, kertas1, orientasi1, cetak1, layanan1;
 
 
     private static final String TAG_MESSAGE = "message";
@@ -176,9 +172,9 @@ RadioGroup radioGroup;
 
         btnCetak=(Button)findViewById(R.id.btnCetak);
         button2 = (Button)findViewById(R.id.button2);
-        textView = (TextView)findViewById(R.id.textView23);
+        textView23 = (TextView)findViewById(R.id.textView23);
         button2.setOnClickListener((View.OnClickListener) this);
-
+        btnCetak.setOnClickListener((View.OnClickListener) this);
     }
 
     @Override
@@ -189,14 +185,14 @@ RadioGroup radioGroup;
             showFileChooser();
         }
         if(v== btnCetak){
-
+            /*
             //filepath
             if(selectedFilePath != null){
                 dialog = ProgressDialog.show(cetakActivity.this,"","Uploading File...",true);
             }else{
                 Toast.makeText(cetakActivity.this,"Please choose a File First",Toast.LENGTH_SHORT).show();
             }
-
+            */
             Bundle bundle = new Bundle();
             bundle.putString("parse_warna", String.valueOf(warna1).toString());
             bundle.putString("parse_orientasi", String.valueOf(orientasi1).toString());
@@ -205,7 +201,7 @@ RadioGroup radioGroup;
             bundle.putString("parse_radio", pilihradio());
             bundle.putString("parse_salinan", EditText0.getText().toString());
             bundle.putString("parse_komentar", EditText02.getText().toString());
-
+            bundle.putString("parse_berkas",selectedFilePath);
 
             Intent intent = new Intent(cetakActivity.this, cetak2Activity.class);
             intent.putExtras(bundle);
@@ -213,6 +209,7 @@ RadioGroup radioGroup;
 
         }
     }
+
 
 
     //file chooser
@@ -242,7 +239,7 @@ RadioGroup radioGroup;
                 Log.i(TAG, "Selected File Path:" + selectedFilePath);
 
                 if (selectedFilePath != null && !selectedFilePath.equals("")) {
-                    textView.setText(selectedFilePath);
+                    textView23.setText(selectedFilePath);
                 } else {
                     Toast.makeText(this, "Cannot upload file to server", Toast.LENGTH_SHORT).show();
                 }
