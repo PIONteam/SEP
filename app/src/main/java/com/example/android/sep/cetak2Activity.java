@@ -41,12 +41,9 @@ public class cetak2Activity extends AppCompatActivity {
     public int kertasid;
     public int layananid;
     ConnectivityManager conMgr;
-    String radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
+    String id_cetak, radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
     TextView textView19, textView39, textView40, textView41, textView42, textView43, textView44, textView47;
-    String berkas, warna, kertas, orientasi, cetak, layanan, salinan, komentar;
-    TextView textView, textView23;
     EditText EditText02, EditText03, EditText0;
-    private Spinner aaa, aaa1, aaa2, aaa3;
     RadioButton radioButton3, radioButton4;
     RadioGroup radioGroup;
 
@@ -68,7 +65,7 @@ public class cetak2Activity extends AppCompatActivity {
         sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
         id_pengguna1 = sharedpreferences.getString(TAG_ID, null);
         EditText02 = (EditText) findViewById(R.id.EditText02);
-        textView23 = (TextView) findViewById(R.id.textView23);
+        textView19 = (TextView) findViewById(R.id.textView19);
         radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
         radioButton4 = (RadioButton) findViewById(R.id.radioButton4);
         EditText0 = (EditText) findViewById(R.id.EditText0);
@@ -86,6 +83,7 @@ public class cetak2Activity extends AppCompatActivity {
             }
 
         }
+
             textView19 = (TextView) findViewById(R.id.textView19);
             textView39 = (TextView) findViewById(R.id.textView39);
             textView40 = (TextView) findViewById(R.id.textView40);
@@ -94,14 +92,16 @@ public class cetak2Activity extends AppCompatActivity {
             textView43 = (TextView) findViewById(R.id.textView43);
             textView44 = (TextView) findViewById(R.id.textView44);
             textView47 = (TextView) findViewById(R.id.textView47);
-        Bundle bundle = getIntent().getExtras();
-        textView39.setText(bundle.getString("parse_warna"));
-        textView40.setText(bundle.getString("parse_kertas"));
-        textView41.setText(bundle.getString("parse_orientasi"));
-        textView42.setText(bundle.getString("parse_radio"));
-        textView43.setText(bundle.getString("parse_layanan"));
-        textView44.setText(bundle.getString("parse_salinan"));
-        textView47.setText(bundle.getString("parse_komentar"));
+
+            Bundle bundle = getIntent().getExtras();
+            textView19.setText(bundle.getString("parse_berkas"));
+            textView39.setText(bundle.getString("parse_warna"));
+            textView40.setText(bundle.getString("parse_kertas"));
+            textView41.setText(bundle.getString("parse_orientasi"));
+            textView42.setText(bundle.getString("parse_radio"));
+            textView43.setText(bundle.getString("parse_layanan"));
+            textView44.setText(bundle.getString("parse_salinan"));
+            textView47.setText(bundle.getString("parse_komentar"));
 
 
             //mengambil id warna
@@ -170,6 +170,8 @@ public class cetak2Activity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "d" + salinan, Toast.LENGTH_SHORT).show();
                 final String id_pengguna = String.valueOf(id_pengguna1).toString();
                 Toast.makeText(getApplicationContext(), "s " + id_pengguna, Toast.LENGTH_SHORT).show();
+                final String berkas = textView19.getText().toString();
+                Toast.makeText(getApplicationContext(), "berkas " + berkas, Toast.LENGTH_SHORT).show();
 
                 //String nama_berkas= textView23.getText().toString();
                 if (conMgr.getActiveNetworkInfo() != null
@@ -177,6 +179,7 @@ public class cetak2Activity extends AppCompatActivity {
                         && conMgr.getActiveNetworkInfo().isConnected()) {
                     check(Spinner1, Spinner2, Spinner3, Spinner4, komentar, berkas, radio, salinan, id_pengguna);
                 } else {
+
                     Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                 }
 
@@ -185,7 +188,7 @@ public class cetak2Activity extends AppCompatActivity {
             }
         });
     }
-            private void check(String Spinner1, String Spinner2, String Spinner3, String Spinner4, final String komentar, String berkas, final String radio, final String salinan, final String id_pengguna) {
+            private void check(String Spinner1, String Spinner2, String Spinner3, String Spinner4, final String komentar, final String berkas, final String radio, final String salinan, final String id_pengguna) {
 
                 StringRequest strReq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
 
@@ -227,7 +230,7 @@ public class cetak2Activity extends AppCompatActivity {
                         params.put("orientasi",isiSpinner1);
                         params.put("kertas", isiSpinner2);
                         params.put("layanan", isiSpinner3);
-                      //  params.put("berkas", berkas);
+                        params.put("berkas", berkas);
                         params.put("komentar", komentar);
                         params.put("halaman", radio);
                         params.put("salinan", salinan);
