@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
+
 import android.net.Uri;
 import android.os.SharedMemory;
 import android.support.v7.app.AppCompatActivity;
@@ -22,20 +22,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.example.android.sep.app.App_Controller;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import static com.example.android.sep.loginActivity.TAG_ID;
-import static com.example.android.sep.loginActivity.my_shared_preferences;
 
 public class cetakActivity extends AppCompatActivity implements View.OnClickListener{
 private Button btnCetak;
