@@ -22,9 +22,7 @@
         <com.daimajia.slider.library.SliderLayout
             android:id="@+id/slider"
             android:layout_width="match_parent"
-            android:layout_height="200dp">
-        </com.daimajia.slider.library.SliderLayout>
-
+            android:layout_height="200dp"></com.daimajia.slider.library.SliderLayout>
 
         <TextView
             android:id="@+id/langkah"
@@ -32,54 +30,108 @@
             android:layout_height="wrap_content"
             android:text="3 Langkah untuk mencetak"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:typeface="monospace"
+            android:textAllCaps="true"
             android:textColor="@android:color/holo_orange_dark"
-            android:textAllCaps="true"/>
-
-        <TextView
-            android:id="@+id/satu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:text="1. Buat akun bila ingin menggunakan aplikasi ini dengan gadget kesayangan anda. Lalu login jika ingin mencetak dokumen."
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:typeface="serif"/>
+            android:typeface="serif" />
 
-
-        <TextView
-            android:id="@+id/dua"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:text="2. Upload dokumen anda dengan format PDF dan isi pengaturan file yang sudah tertera."
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:typeface="serif"/>
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="27dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="1. "
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
-        <TextView
-            android:id="@+id/tiga"
+            <TextView
+                android:id="@+id/satu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Buat akun bila ingin menggunakan aplikasi ini dengan gadget kesayangan anda. Lalu login jika ingin mencetak dokumen."
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="27dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="2. "
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/dua"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Upload dokumen anda dengan format PDF dan isi pengaturan file yang sudah tertera."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="3. Setelah dokumen siap, akan muncul status pada menu status dan terdapat nomor file. Ambil dokumen di outlet dengan menunjukkan nomor file yang ada pada status."
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:typeface="serif"/>
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="27dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="3. "
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tiga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Setelah dokumen siap, akan muncul status pada menu status dan terdapat nomor file. Ambil dokumen di outlet dengan menunjukkan nomor file yang ada pada status."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
 
 
     </LinearLayout>
