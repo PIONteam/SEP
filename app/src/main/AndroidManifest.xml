@@ -44,7 +44,7 @@
             android:theme="@style/AppTheme2" />
         <activity
             android:name=".daftar2Activity"
-            android:label="Daftar"
+            android:label="Verifikasi"
             android:theme="@style/AppTheme2" />
 
         <meta-data

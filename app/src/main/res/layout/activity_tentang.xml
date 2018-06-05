@@ -18,14 +18,20 @@
     <TextView
         android:id="@+id/tv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="334dp"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
         android:text="Percetakan SEP adalah bisnis percetakan terbesar yang berpusat di kota Jember. Semakin besarnya bisnis percetakan SEP,maka sarana dan prasarana yang digunakan akan semakinbesar pula misalnya SDM dan tempat parkir. Untuk memecahkan masalah tersebut dibutuhkan sebuah sistem informasi agar pengguna yang ingin mencetak dokumen tidak perlu antri terlalu lama. Melihat dari masalah tersebut, kami membuat sebuah aplikasi android. Jadi, user yang ingin mencetak dokumen dan malas untuk antri bisa menggunakan aplikasi ini."
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="18dp"
+        android:textSize="16dp"
         android:textStyle="bold"
         android:typeface="serif"
-        android:layout_margin="15dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

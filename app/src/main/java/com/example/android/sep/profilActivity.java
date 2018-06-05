@@ -36,7 +36,6 @@ import static com.example.android.sep.loginActivity.TAG_ID_PENGGUNA;
 import static com.example.android.sep.loginActivity.TAG_KATA_SANDI;
 import static com.example.android.sep.loginActivity.TAG_NAMA_LENGKAP;
 import static com.example.android.sep.loginActivity.TAG_NAMA_PENGGUNA;
-import static com.example.android.sep.loginActivity.TAG_NO_TLP;
 import static com.example.android.sep.loginActivity.my_shared_preferences;
 import static com.example.android.sep.loginActivity.session_status;
 
@@ -56,7 +55,7 @@ public class profilActivity extends AppCompatActivity {
     String tag_json_obj = "json_obj_req";
     ConnectivityManager connec;
     Boolean session = false;
-    String nama_pengguna, nama_lengkap, no_tlp, alamat, kata_sandi, email, id_pengguna;
+    String nama_pengguna, nama_lengkap,  alamat, kata_sandi, email, id_pengguna;
     EditText namaLengkap2, namaPengguna2, alamat2, email2, kataSandi2;
     Button edit, simpan, batal;
     TextView txtNamaLengkap, txtNamaPengguna, txtAlmat, txtEmail, txtKataSandi;
@@ -132,7 +131,7 @@ public class profilActivity extends AppCompatActivity {
                     if (connec.getActiveNetworkInfo()   !=null
                             && connec.getActiveNetworkInfo() .isAvailable()
                             && connec.getActiveNetworkInfo(). isAvailable()){
-                        simpan (id_pengguna, nama_lengkap, nama_pengguna, alamat, email, no_tlp, kata_sandi);
+                        simpan (id_pengguna, nama_lengkap, nama_pengguna, alamat, email, kata_sandi);
 
                     }else{
                         Toast.makeText(getApplicationContext(), "Tidak Ada Konneksi Internet", Toast.LENGTH_LONG).show();
@@ -173,7 +172,6 @@ public class profilActivity extends AppCompatActivity {
                     String nama_pengguna = jObj.getString(TAG_NAMA_PENGGUNA);
                     String alamat = jObj.getString(TAG_ALAMAT);
                     String email = jObj.getString(TAG_EMAIL);
-                    String no_tlp = jObj.getString(TAG_NO_TLP);
                     String kata_sandi = jObj.getString(TAG_KATA_SANDI);
 
                     txtNamaLengkap.setText(nama_lengkap);
@@ -208,8 +206,8 @@ public class profilActivity extends AppCompatActivity {
         App_Controller.getInstance().addToRequestQueue(request, tag_json_obj);
     }
 
-    private void simpan (final String id_pennguna, final String nama_lengkap, final String nama_pengguna,
-                         final String alamat, final String email, final String no_tlp, final String kata_sandi){
+    private void simpan (final String id_pengguna, final String nama_lengkap, final String nama_pengguna,
+                         final String alamat, final String email, final String kata_sandi){
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Simpan");
@@ -241,14 +239,6 @@ public class profilActivity extends AppCompatActivity {
                         txtEmail.setText(email);
                         txtKataSandi.setText(kata_sandi);
 
-                        sharedPreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
-                        session = sharedPreferences.getBoolean(session_status, false);
-                        nama_pengguna = sharedPreferences.getString(TAG_NAMA_PENGGUNA, null);
-                        nama_lengkap = sharedPreferences.getString(TAG_NAMA_LENGKAP, null);
-                        alamat = sharedPreferences.getString(TAG_ALAMAT, null);
-                        kata_sandi = sharedPreferences.getString(TAG_KATA_SANDI, null);
-                        email = sharedPreferences.getString(TAG_EMAIL, null);
-                        id_pengguna = sharedPreferences.getString(TAG_ID_PENGGUNA, null);
 
                         updateUI("BATAL");
 
@@ -277,7 +267,6 @@ public class profilActivity extends AppCompatActivity {
                 params.put("id_pengguna", id_pengguna);
                 params.put("nama_lengkap", nama_lengkap);
                 params.put("alamat", alamat);
-                params.put("no_tlp", no_tlp);
                 params.put("email", email);
                 params.put("kata_sandi", kata_sandi);
                 params.put("nama_pengguna", nama_pengguna);
