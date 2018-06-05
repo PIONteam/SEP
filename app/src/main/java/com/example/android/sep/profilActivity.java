@@ -138,6 +138,15 @@ public class profilActivity extends AppCompatActivity {
                     }
 
                 }
+                //menyimpan ke session
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString(TAG_NAMA_LENGKAP, nama_lengkap);
+                editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
+                editor.putString(TAG_ALAMAT, alamat);
+                editor.putString(TAG_EMAIL, email);
+                editor.putString(TAG_KATA_SANDI, kata_sandi);
+
+                editor.commit();
             }
         });
 

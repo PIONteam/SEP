@@ -57,6 +57,7 @@ public class cetak2Activity extends AppCompatActivity {
 
 
     String tag_json_obj = "json_obj_req";
+    private String selectedFilePath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,6 +174,8 @@ public class cetak2Activity extends AppCompatActivity {
                 final String berkas = textView19.getText().toString();
                 Toast.makeText(getApplicationContext(), "berkas " + berkas, Toast.LENGTH_SHORT).show();
 
+
+
                 //String nama_berkas= textView23.getText().toString();
                 if (conMgr.getActiveNetworkInfo() != null
                         && conMgr.getActiveNetworkInfo().isAvailable()
@@ -182,8 +185,11 @@ public class cetak2Activity extends AppCompatActivity {
 
                     Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                 }
+                Bundle bundle = new Bundle();
+                bundle.putString("parse_berkas",textView19.getText().toString());
 
-                Intent intent = new Intent(cetak2Activity.this, syaratketentuanActivity.class);
+                Intent intent = new Intent(cetak2Activity.this, berkasActivity.class);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });

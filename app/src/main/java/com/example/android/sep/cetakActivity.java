@@ -43,7 +43,7 @@ RadioGroup radioGroup;
     public int kertas;
     public int layanan;
     String radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
-    String file, warna1, kertas1, orientasi1, cetak1, layanan1;
+    String warna1, kertas1, orientasi1, cetak1, layanan1;
 
 
     private static final String TAG_MESSAGE = "message";
