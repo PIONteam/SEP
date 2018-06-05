@@ -1,20 +1,16 @@
 package com.example.android.sep;
 
-<<<<<<< HEAD
-=======
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
->>>>>>> 9213849d99f635bd6b12e2a500cf4d5951adff12
 import android.content.Intent;
 import android.net.ConnectivityManager;
-<<<<<<< HEAD
-=======
+
 import android.net.Uri;
 import android.os.SharedMemory;
->>>>>>> 9213849d99f635bd6b12e2a500cf4d5951adff12
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
