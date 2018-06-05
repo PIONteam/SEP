@@ -59,12 +59,11 @@ RadioGroup radioGroup;
     String radio, id_pengguna1, isiSpinner3, isiSpinner, isiSpinner1, isiSpinner2;
     String warna1, kertas1, orientasi1, cetak1, layanan1;
 
+
     private static final String TAG_MESSAGE = "message";
-    private static final String TAG_SUCCESS = "success";
-    private String url = Server.URL + "cetak.php";
     private static final String TAG = daftarActivity.class.getSimpleName();
 
-    String tag_json_obj = "json_obj_req";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -200,22 +199,6 @@ RadioGroup radioGroup;
             showFileChooser();
         }
         if(v== btnCetak){
-            final String Spinner1  = isiSpinner;
-            final String Spinner2 = isiSpinner1;
-            final String Spinner3 = isiSpinner2;
-            final String Spinner4 = isiSpinner3;
-            final String komentar = EditText02.getText().toString();
-            final String berkas = textView23.getText().toString();
-            final String radio = pilihradio();
-            final String salinan = EditText0.getText().toString();
-            final String id_pengguna = String.valueOf(id_pengguna1).toString();
-
-            //String nama_berkas= textView23.getText().toString();
-            if (conMgr.getActiveNetworkInfo() != null
-                    && conMgr.getActiveNetworkInfo().isAvailable()
-                    && conMgr.getActiveNetworkInfo().isConnected()) {
-                check(Spinner1, Spinner2, Spinner3, Spinner4, komentar, berkas, radio, salinan,id_pengguna);
-            }
 
             //filepath
             if(selectedFilePath != null){
@@ -240,8 +223,6 @@ RadioGroup radioGroup;
 
         }
     }
-
-
 
 
     //file chooser
@@ -278,60 +259,7 @@ RadioGroup radioGroup;
             }
         }
     }
-    private void check(final String Spinner1, final String Spinner2, final String Spinner3, final String Spinner4, final String komentar, final String berkas, final String radio, final String salinan, final String id_pengguna) {
 
-        StringRequest strReq = new StringRequest(Request.Method.POST,url, new Response.Listener<String>() {
-
-            @Override
-            public void onResponse(String response) {
-
-
-                try {
-                    JSONObject jObj = new JSONObject(response);
-
-
-                    // Check for error node in json
-
-                } catch (JSONException e) {
-                    // JSON error
-                    Toast.makeText(getApplicationContext(),
-                            "gagal lagi", Toast.LENGTH_LONG).show();
-                    e.printStackTrace();
-                }
-
-            }
-        }, new Response.ErrorListener() {
-
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e(TAG, "Login Error: " + error.getMessage());
-                Toast.makeText(getApplicationContext(),
-                        "gagal", Toast.LENGTH_LONG).show();
-
-
-            }}) {
-
-            @Override
-            protected Map<String, String> getParams() {
-                // Posting parameters to login url
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("warna",Spinner1);
-                params.put("orientasi",Spinner2);
-                params.put("kertas", Spinner3);
-                params.put("layanan", Spinner4);
-                params.put("berkas", berkas);
-                params.put("komentar", komentar);
-                params.put("halaman", radio);
-                params.put("salinan", salinan);
-                params.put("id_pengguna", id_pengguna);
-                return params;
-            }
-
-        };
-
-        // Adding request to request queue
-        App_Controller.getInstance().addToRequestQueue(strReq, tag_json_obj);
-    }
 
     public String pilihradio(){
 
