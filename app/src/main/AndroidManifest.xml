@@ -19,6 +19,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".splashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,22 +28,27 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".loginActivity"
             android:label="Login"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".profilActivity"
             android:label="Profil"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".cetakActivity"
-            android:label="@string/cetak1"
+            android:label="Cetak File"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".daftarActivity"
             android:label="Daftar"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".daftar2Activity"
             android:label="Verifikasi"
             android:theme="@style/AppTheme2" />
@@ -52,30 +58,36 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
+            android:screenOrientation="portrait"
             android:name=".berkasActivity"
             android:label="Status"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".cetak2Activity"
-            android:label="@string/cetak2"
+            android:label="Konfirmasi Cetak File"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".homeActivity"
             android:label="Beranda"
             android:theme="@style/AppTheme" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".homesebelumActivity"
             android:label="Beranda"
             android:theme="@style/AppTheme" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".tentangActivity"
             android:label="Tentang"
             android:theme="@style/AppTheme2" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".syaratketentuanActivity"
             android:label="Konfirmasi"
             android:theme="@style/AppTheme2" />
-        <activity android:name=".getway"></activity>
+
     </application>
 
 </manifest>

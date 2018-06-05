@@ -180,7 +180,7 @@ String tag_json_obj = "json_obj_req";
                         editor.putString(TAG_ID, id_pengguna);
                         editor.putString(TAG_KATA_SANDI, kata_sandi);
                         editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
-                        editor.putString(TAG_ID_PENGGUNA, id_pennguna);
+                        editor.putString(TAG_ID_PENGGUNA, id_pengguna);
                         editor.putString(TAG_ALAMAT, alamat);
                         editor.putString(TAG_EMAIL, email);
                         editor.putString(TAG_NO_TLP, no_tlp);

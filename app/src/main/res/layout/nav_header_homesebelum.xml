@@ -13,29 +13,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <TextView
-        android:layout_width="184dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SETENGAH"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="30sp"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="213dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="184dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="88dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="ENAM PAGI"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_sep"/>
 </android.support.constraint.ConstraintLayout>

@@ -248,6 +248,14 @@ public class profilActivity extends AppCompatActivity {
                         txtEmail.setText(email);
                         txtKataSandi.setText(kata_sandi);
 
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putBoolean(session_status, true);
+                        editor.putString(TAG_KATA_SANDI, kata_sandi);
+                        editor.putString(TAG_NAMA_PENGGUNA, nama_pengguna);
+                        editor.putString(TAG_ALAMAT, alamat);
+                        editor.putString(TAG_EMAIL, email);
+                        editor.putString(TAG_NAMA_LENGKAP, nama_lengkap);
+
 
                         updateUI("BATAL");
 

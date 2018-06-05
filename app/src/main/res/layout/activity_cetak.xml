@@ -60,16 +60,16 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.106"
+                app:layout_constraintVertical_bias="0.102"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="162dp"
-                android:layout_height="24dp"
+                android:layout_height="38dp"
                 android:layout_marginEnd="140dp"
                 android:layout_marginStart="8dp"
-                android:text="ukuran maksimal 30mb"
+                android:text="ukuran maksimal 30mb, format PDF"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -149,7 +149,7 @@
             <Spinner
                 android:id="@+id/spinner3"
                 android:layout_width="194dp"
-                android:layout_height="39dp"
+                android:layout_height="40dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/border_style2"
@@ -157,7 +157,7 @@
                 android:entries="@array/list3"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintHorizontal_bias="0.056"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinner2"
                 tools:ignore="InvalidId,MissingConstraints" />
@@ -165,8 +165,8 @@
             <Spinner
                 android:id="@+id/spinner4"
                 android:layout_width="194dp"
-                android:layout_height="37dp"
-                android:layout_marginBottom="4dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="12dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/border_style2"
@@ -177,7 +177,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="InvalidId,MissingConstraints,UnknownId" />
 
             <ImageView
@@ -233,7 +232,7 @@
                 android:layout_width="224dp"
                 android:layout_height="84dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="360dp"
+                android:layout_marginTop="388dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="OnClick">
@@ -322,18 +321,18 @@
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EditText02"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="wrap_content"
-                android:layout_height="22dp"
-                android:layout_marginTop="12dp"
+                android:layout_width="212dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
                 android:text="Tambahkan komentar tambahan jika ada :"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.176"
+                app:layout_constraintHorizontal_bias="0.114"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EditText0"
                 tools:ignore="MissingConstraints" />
@@ -347,7 +346,7 @@
                 android:background="@drawable/border_style"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toStartOf="@+id/button2"
-                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintHorizontal_bias="0.8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -357,13 +356,13 @@
                 android:layout_height="0dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="28dp"
                 android:gravity="top|left"
                 android:text="Salinan"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/EditText0"
-                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintHorizontal_bias="0.311"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EditText03"
                 tools:ignore="MissingConstraints" />
