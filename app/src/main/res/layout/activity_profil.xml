@@ -97,7 +97,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:text="Nama Pengguna"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/textView45"
@@ -468,7 +468,7 @@
                         android:layout_weight="1"
                         android:background="@android:color/holo_red_dark"
                         android:text="batal"
-                        android:textSize="16dp"
+                        android:textSize="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/buttonSimpan"
                         app:layout_constraintHorizontal_bias="1.0"
@@ -486,7 +486,7 @@
                         android:layout_weight="1"
                         android:background="@android:color/holo_green_light"
                         android:text="simpan"
-                        android:textSize="16dp"
+                        android:textSize="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
