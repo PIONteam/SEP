@@ -21,6 +21,7 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 
 import java.util.HashMap;
 
+
 public class homesebelumActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private SliderLayout sliderLayout;
@@ -61,6 +62,11 @@ public class homesebelumActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    public void onDestroy(){
+        super.onDestroy();
+        android.os.Debug.stopMethodTracing();
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -99,5 +105,8 @@ public class homesebelumActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+
+
+
     }
 }
