@@ -111,7 +111,6 @@ public class homeActivity extends AppCompatActivity
             editor.commit();
 
             Intent intent = new Intent(getApplicationContext(), homesebelumActivity.class );
-            finish();
             startActivity(intent);
         }
 
