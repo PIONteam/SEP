@@ -195,7 +195,6 @@ String tag_json_obj = "json_obj_req";
                         intent.putExtra(TAG_KATA_SANDI, kata_sandi);
                         intent.putExtra(TAG_NAMA_PENGGUNA, nama_pengguna);
                         startActivity(intent);
-                        finish();
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
